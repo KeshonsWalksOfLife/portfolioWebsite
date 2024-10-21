@@ -1,9 +1,241 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Things To Share</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #f2f2f2;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      header,
+      .dropdown {
+        background: #6c0000;
+        color: #fff;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      /* H1 is the logo with my Name */
+      .Home {
+        padding-left: 250px;
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+      }
+      /* Nav Bar used Flex to align the Links */
+      nav {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        font-size: 1.1rem;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 35px;
+      }
+      /* Drop Down Menu for the About Me Sections  */
+      .dropdown {
+        display: inline-block;
+        position: relative;
+      }
+
+      /* Hiding the content from the page and giving it a specific width and liveness with the box-shadow  */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #6c0000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+
+      /* The color code for the links and put into display box to change vertically */
+      .dropdown-content a {
+        color: white;
+        padding: 12px 8px;
+        display: block;
+      }
+      /* Now for the effect when hovering over the #aboutMe link */
+      .dropdown-content a:hover {
+        background: #6c0000;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      /* Section Divided Into Their Respective Areas */
+      section {
+        padding: 20px;
+        margin: 40px auto;
+        max-width: 80vw;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 20px rgba (0, 0, 0, 0.1);
+      }
+      /* The Blocks are the boxes themselves */
+      .block {
+        display: flex;
+        justify-content: center;
+        padding: 50px;
+      }
+      /* The Family Box Sizing */
+      #family {
+        max-width: 75%;
+      }
+      /* The family picture for more notability  */
+      .family-first {
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+      /* The family text next to the family photo */
+      #family .text {
+        /* border: 1px solid red; */
+        font-size: 4.5em;
+        max-width: 800px;
+        margin-left: 60px;
+        text-align: left;
+      }
+      /* Max width on the content creation video */
+      #content-creation {
+        max-width: 60%;
+      }
+      /* The items on the inner box shifted to the center */
+      #content-creation .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      /* Increase the font size text */
+      #content-creation,
+      #accomplish .text {
+        font-size: 1.5em;
+      }
+      /* Showing max width for all the boxes to fit in the middle */
+      #accomplish {
+        max-width: 100%;
+      }
+      /*  The items on the inner box shifted to the centeR */
+      #accomplish .block {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      /* Getting all 3 boxes to fit in the middle of page */
+      #accomplish .design {
+        width: 30%;
+        margin: 15px;
+        border: 6px solid black;
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+      /* The Final Footer */
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background: #6c0000;
+        color: #fff;
+        margin-top: 20px;
+      }
+
+      footer > .footer-nav {
+        justify-content: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1><a href="aboutMe.html" class="Home">Keshon D. Bowman</a></h1>
+      <!-- Navigation links to webpage -->
+      <nav class="header-nav">
+        <a href="aboutMe.html">About Me</a>
+        <a href="importantEvents.html">Important Events</a>
+        <a href="#notablePlaceMap">Notable Places Map</a>
+        <a href="#christianWorldview">Christian Worldview</a>
+        <a href="#contactMe">Contact Me</a>
+        <!-- Drop Down Menu For Sections in About Me Page -->
+        <div class="dropdown">
+          <a href="thingsToShare.html">Things to Share</a>
+          <div class="dropdown-content">
+            <a href="#family">Family Pictures</a>
+            <a href="#content-creation">Content Creation</a>
+            <a href="#accomplish">Accomplished</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--First Section Beginning With Family Picture -->
+    <section id="family">
+      <div class="block first">
+        <div class="content">
+          <img
+            src="/family.jpeg"
+            alt="Family First"
+            width="800px"
+            class="family-first"
+          />
+        </div>
+        <!-- Next To Family Photo with A Box For Text -->
+        <div class="text">
+          <h3>
+            Spending quality time with family is what matters most and here is a
+            picture of the family at Great Wolf Lodge!
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!--Next Section Content Creation Video With Text -->
+    <section id="content-creation">
+      <div class="block second">
+        <div class="content">
+          <video controls width="1400px">
+            <source src="/0410.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="text">
+          <h3>
+            Making Content is amazing to me, the ideas and concepts I can put on
+            paper and/or technology makes dreams into reality.
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!--MY accomplished Graphics and certs I have achieved in this Development -->
+    <section id="accomplish">
+      <div class="block third">
+        <div class="content">
+          <img src="/life-art.JPEG" alt="Life is Art" class="design" />
+          <img src="/quote.JPG" alt="Monday Motivation" class="design" />
+          <img src="/freecodecamp.png" alt="FreeCodeCamp Cert" class="design" />
+        </div>
+        <!-- Text Above the Third Section -->
+        <div class="text">
+          <h3>
+            Graphic and Web Design is art and being able to adapt to my
+            different styles of Art is what has made me become a Better Artist
+            Myself.
+          </h3>
+        </div>
+      </div>
+    </section>
+    <!-- Final Footer -->
+    <footer>
+      <p>&copy; 2024 Keshon D. Bowman. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="aboutMe.html">About Me</a> |
+        <a href="importantEvents.html">Important Events</a> |
+        <a href="thingsToShare.html">Things to Share</a> |
+        <a href="#notablePlaceMap">Notable Places Map</a> |
+        <a href="#contactME">Contact Me</a> |
+        <a href="#christianWorldview">Christian Worldview</a>
+      </nav>
+    </footer>
+  </body>
 </html>

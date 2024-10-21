@@ -3,7 +3,308 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>important Events</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: #f2f2f2;
+        color: #222;
+        line-height: 1.6;
+      }
+
+      header,
+      .dropdown {
+        background: #6c0000;
+        color: #fff;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      /* H1 is the logo with my Name */
+      .Home {
+        padding-left: 250px;
+        font-size: 2rem;
+        text-decoration: none;
+        color: white;
+      }
+      /* Nav Bar used Flex to align the Links */
+      nav {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        font-size: 1.1rem;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 35px;
+      }
+
+      /* Drop Down Menu for the About Me Sections  */
+      .dropdown {
+        display: inline-block;
+        position: relative;
+      }
+
+      /* Hiding the content from the page and giving it a specific width and liveness with the box-shadow  */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #6c0000;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+
+      /* The color code for the links and put into display box to change vertically */
+      .dropdown-content a {
+        color: white;
+        padding: 12px 8px;
+        display: block;
+      }
+      /* Now for the effect when hovering over the #aboutMe link */
+      .dropdown-content a:hover {
+        background: #6c0000;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      /* Section Divided Into Their Respective Areas */
+      section {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 80vw;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 20px 20px rgba (0, 0, 0, 0.1);
+      }
+      /* The Blocks are the boxes themselves */
+      .block {
+        display: flex;
+        justify-content: center;
+        padding: 60px 40px 0 20px;
+      }
+      /* The sailor img */
+      .sailor {
+        border-radius: 15px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+      }
+      /* The text in the header next to the img */
+      .text {
+        max-width: 900px;
+        padding-left: 100px;
+        margin-top: -50px;
+      }
+      /* Creating the box for the second section */
+      #job {
+        max-width: 50%;
+        /* border: 2px solid red; */
+      }
+      /* Centering the Picture next to the Job Table*/
+      .block.second img {
+        padding: 40px;
+        /* border: 2px solid red; */
+        margin-top: -30px;
+        margin-left: -30px;
+      }
+      /* Getting the table pushed away from the picture */
+      .block.second table {
+        /* border: 3px solid blue; */
+        margin-left: 50px;
+      }
+      /* Creating the box for the third section */
+      #projects {
+        max-width: 100%;
+      }
+      /* Centering the picture next to the projects table */
+      .first-project {
+        padding-left: 40px;
+        margin-top: -20px;
+      }
+      /* Creating bigger font for the captions above the tables */
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      /* Spreading out the tables from inner box */
+      table {
+        padding-left: 100px;
+      }
+      /* Spreading out each table row and data in the box for more space */
+      tr,
+      td {
+        border: 4px solid rgb(160 160 160);
+        padding: 5px 20px;
+        font-size: 1.3em;
+      }
+      /* Adding for size to the font next to the sailor picture */
+      h3 {
+        font-size: 4rem;
+      }
+      /* All Last content was based on the information in the navigation and copyrighted by myself  */
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background: #6c0000;
+        color: #fff;
+        margin-top: 20px;
+      }
+
+      footer > .footer-nav {
+        justify-content: center;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="background">
+      <header>
+        <h1><a href="aboutMe.html" class="Home">Keshon D. Bowman</a></h1>
+        <!-- Navigation links to webpage -->
+        <nav class="header-nav">
+          <a href="aboutMe.html">About Me</a>
+          <a href="thingsToShare.html">Things to Share</a>
+          <a href="#notablePlaceMap">Notable Places Map</a>
+          <a href="#christianWorldview">Christian Worldview</a>
+          <a href="#contactMe">Contact Me</a>
+          <!-- Drop Down Menu For Sections in About Me Page -->
+          <div class="dropdown">
+            <a href="importantEvents.html">Important Events</a>
+            <div class="dropdown-content">
+              <a href="#enlisted">Enlisted Military</a>
+              <a href="#job">Job Experience</a>
+              <a href="#projects">Finished Projects</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- Sailor Section For An Important Event -->
+      <section id="enlisted">
+        <div class="block first">
+          <div class="content">
+            <img
+              src="/lancaster-sailor.jpg"
+              alt="Sailor"
+              width="800px"
+              class="sailor"
+            />
+          </div>
+          <!-- Text next to the Sailor Picture -->
+          <div class="text">
+            <h3>
+              Enlisted in the military in 2018, I was stationed in Sasebo, Japan
+              and experiencing the life on amphibious ships and lifestyle. This
+              is the time that has made me and this is where the journey begins.
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!--Job Description of Picture Of Current Job-->
+      <section id="job">
+        <div class="block second">
+          <div class="content">
+            <img
+              src="/simplifi_logo.jpg"
+              alt="Simpli.fi"
+              width="300px"
+              class="simpli"
+            />
+          </div>
+          <!--Job Experience Table -->
+          <div class="table">
+            <table>
+              <caption>
+                Job Experience
+              </caption>
+              <tr>
+                <td>May 2024</td>
+                <td>Desktop Support Specialist</td>
+                <td>Simpli.fi</td>
+              </tr>
+              <tr>
+                <td>Feb 2023</td>
+                <td>Account Assistant</td>
+                <td>ACME Brick</td>
+              </tr>
+              <tr>
+                <td>June 2022</td>
+                <td>Real Estate Agent</td>
+                <td>eXp Realty</td>
+              </tr>
+              <tr>
+                <td>January 2018</td>
+                <td>Boatswain Mate 3rd Class</td>
+                <td>U.S Navy</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Project Section of First Project Completed -->
+      <section id="projects">
+        <div class="block third">
+          <div class="content">
+            <img
+              src="/first-project.png"
+              alt="First FinishProjects"
+              width="1000px"
+              class="first-project"
+            />
+          </div>
+          <!-- Project Table of Each Front End Project Completed -->
+          <div class="table">
+            <table>
+              <caption>
+                Projects I Have Built Using Front End Languages
+              </caption>
+              <tr>
+                <td>Dec 2023</td>
+                <td>Free Thinking Design Part 1</td>
+                <td>
+                  This is an idea that was introduced using ChatGPT, a persona
+                  was made to start the background on a basic concept for
+                  "Sarah's Blog".
+                </td>
+              </tr>
+
+              <tr>
+                <td>Feb 2024</td>
+                <td>Product Card Challenge</td>
+                <td>
+                  Using HTML and CSS, we were able to gather a responsive feel
+                  through changing both pictures for the mobile and desktop
+                  version, the finished product is exciting and with more to
+                  come along the journey, we are excited to give you this
+                  design.
+                </td>
+              </tr>
+              <tr>
+                <td>Jan 2024</td>
+                <td>JavaScript Clock</td>
+                <td>
+                  Using vanillaJS 30 day Challenge, we were able to create a
+                  loop JavaScript clock that will move simultaneously as the
+                  user is viewing the design.
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+      <!-- Footer To End The Page -->
+      <footer>
+        <p>&copy; 2024 Keshon D. Bowman. All rights reserved.</p>
+        <nav class="footer-nav">
+          <a href="aboutMe.html">About Me</a> |
+          <a href="#importantEvents">Important Events</a> |
+          <a href="#thingsToShare">Things to Share</a> |
+          <a href="#notablePlaceMap">Notable Places Map</a> |
+          <a href="#contactME">Contact Me</a> |
+          <a href="#christianWorldview">Christian Worldview</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
 </html>
