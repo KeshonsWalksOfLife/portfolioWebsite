@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    color: #222;
+    line-height: 1.6;
+  }
+
+  /* Header background to be centered out */
+  header,
+  .dropdown {
+    background: #6c0000;
+    color: #fff;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* H1 is the logo with my Name */
+  h1 {
+    padding-left: 250px;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  /* Nav Bar used Flex to align the Links */
+  nav {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 35px;
+  }
+
+  #h1-fold {
+    font-size: 3em;
+    text-align: center;
+    margin-left: -200px;
+  }
+
+/* Map container */
+.map-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Adjust to control the map's display size */
+    margin: 0 auto;
+    margin-left: 120px;
+}
+
+/* Map image */
+.map-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Marker styling */
+.marker {
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.8); /* Red background with opacity */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transform: translate(-50%, -50%); /* Centers marker text over the position */
+    cursor: pointer;
+    animation: blinker 10s ease-in-out infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+/* Hover effect for markers */
+.marker:hover {
+    background-color: rgba(255, 0, 0, 1); /* Brighter red on hover */
+    animation: none;
+}
+
+section {
+    display: flex;
+}
+
+h2 {
+    position: relative;
+    font-size: 1.3em;
+    color: white;
+    position: absolute;
+    text-align: center;
+    background-color: black;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px 1px black;
+}
+
+h2.cash:nth-child(2) {
+    right: 670px;
+}
+
+h2.cash:nth-child(4) {
+    right: 420px;
+}
+
+h2.cash:nth-child(6) {
+    right: 150px;
+}
+
+h2.cash:nth-child(8) {
+    top: 750px;
+    right: 560px;
+}
+
+h2.cash:nth-child(10) {
+    top: 750px;
+    right: 310px;
+}
+
+h2.cash:hover {
+    background: #6c0000;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    /* border: 1px solid red; */
+    margin-right: 100px; 
+    gap: 15px;
+}
+
+.box img {
+    object-fit: cover;
+    border: 2px solid rgba(0,0,0,0.4);
+    box-shadow: 0 0 5px 1px black;
+}
+
+  footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #6c0000;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  footer > .footer-nav {
+    justify-content: center;
+  }
