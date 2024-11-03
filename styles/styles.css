@@ -86,7 +86,7 @@ body {
 section {
     display: flex;
 }
-
+/* Section for Christian Worldview Ideas */
 section#christianWorldview {
     display: block;
     padding: 20px;
@@ -140,6 +140,7 @@ h2.cash:hover {
     transition: .2s ease-in-out;
     cursor: pointer;
 }
+/* The font family for the text */
 .christian {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
