@@ -29,13 +29,13 @@ body {
     align-items: center;
     font-size: 1.1rem;
   }
-  /* Nav Links Displayed on the Nav Bar */
+
   nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 35px;
   }
-  /* The first h1 element above the fold */
+
   #h1-fold {
     font-size: 3em;
     text-align: center;
@@ -48,7 +48,7 @@ body {
     width: 100%;
     max-width: 900px; /* Adjust to control the map's display size */
     margin: 0 auto;
-    margin-left: 75px;
+    margin-left: 120px;
 }
 
 /* Map image */
@@ -69,7 +69,7 @@ body {
     cursor: pointer;
     animation: blinker 10s ease-in-out infinite;
 }
-/* The animation of the blinker */
+
 @keyframes blinker {
     50% {
         opacity: 0;
@@ -82,12 +82,23 @@ body {
     background-color: rgba(255, 0, 0, 1); /* Brighter red on hover */
     animation: none;
 }
-/* Flex to have both section next to each other */
+
 section {
     display: flex;
 }
-/* The h2 elements are positioned inside of the pictures */
+
+section#christianWorldview {
+    display: block;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
 h2 {
+    position: relative;
     font-size: 1.3em;
     color: white;
     position: absolute;
@@ -97,36 +108,45 @@ h2 {
     border-radius: 4px;
     box-shadow: 0 0 2px 1px black;
 }
-/* The h2 has their designated areas specific to the container that they are in */
-/* The india Rupee */
+
+h2.christian-h2 {
+ position: unset;
+}
+
 h2.cash:nth-child(2) {
     right: 670px;
 }
-/* Philippine Peso */
+
 h2.cash:nth-child(4) {
     right: 420px;
 }
-/* Singaporean Dollars */
+
 h2.cash:nth-child(6) {
-    right: 150px;
+      right: 150px;
 }
-/* Thai Baht */
+
 h2.cash:nth-child(8) {
     top: 750px;
     right: 560px;
 }
-/* Japanese Yen */
+
 h2.cash:nth-child(10) {
     top: 750px;
     right: 310px;
 }
-/* The hover element for each h2 element */
+
 h2.cash:hover {
     background: #6c0000;
     transition: .2s ease-in-out;
     cursor: pointer;
 }
-/* Each box That the picture is in */
+.christian {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  /* border: 2px solid red; */
+  letter-spacing: 1px;
+}
+
 .box {
     display: flex;
     flex-direction: row;
@@ -137,13 +157,13 @@ h2.cash:hover {
     margin-right: 100px; 
     gap: 15px;
 }
-    /* Showing each picture in the designated box */
+
 .box img {
     object-fit: cover;
     border: 2px solid rgba(0,0,0,0.4);
     box-shadow: 0 0 5px 1px black;
 }
-    /* Last but Not least the Footer */
+
   footer {
     text-align: center;
     padding: 10px 0;
