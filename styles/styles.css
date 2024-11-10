@@ -87,7 +87,7 @@ section {
     display: flex;
 }
 /* Section for Christian Worldview Ideas */
-section#christianWorldview {
+section#christianWorldview, #contact-form, #contact-info {
     display: block;
     padding: 20px;
     margin: 20px auto;
@@ -97,7 +97,15 @@ section#christianWorldview {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+#contact-form {
+  padding-bottom: 100px;
+}
+
+#contact-info {
+  text-align: center;
+}
+
+h2.cash, .christian-h2 {
     position: relative;
     font-size: 1.3em;
     color: white;
@@ -107,6 +115,69 @@ h2 {
     padding: 4px;
     border-radius: 4px;
     box-shadow: 0 0 2px 1px black;
+}
+
+h2.form-h2 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+.word {
+  display: block
+}
+
+form {
+  width: 310px;
+  height: 250px;
+  /* border: 1px solid red; */
+  margin: 20px auto 0;
+}
+
+label {
+  padding: 6px;
+}
+
+input#name {
+padding: 4px;  
+width: 295px;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+}
+
+input#name:focus, textarea:focus {
+  box-shadow: 0 0 3px 3px #6c0000;
+  background: #f2f2f2
+}
+
+.button {
+  padding: 20px 40px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  margin-left: 80%;
+}
+
+/* Testing */
+
+.button:hover {
+  background: #6c0000;
+}
+
+button.contact-button {
+  margin-top: 10px;
+  margin-left: 30%;
+  /* border: 1px solid red; */
+}
+
+#responseMessage {
+  width: 40%;
+  margin: 80px auto 0;
+  /* border: 1px solid red; */
+  text-align: center;
 }
 
 h2.christian-h2 {

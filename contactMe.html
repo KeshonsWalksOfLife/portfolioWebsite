@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Keshon D. Bowman</h1>
+      <!-- Navigation links to webpage -->
+      <nav class="header-nav">
+        <a href="aboutMe.html">About Me</a>
+        <a href="importantEvents.html">Important Events</a>
+        <a href="thingsToShare.html">Things to Share</a>
+        <a href="notablePlaceMap.html">Notable Places Map</a>
+        <a href="christianWorldview.html">Christian Worldview</a>
+        <a href="contactMe.html">Contact Me</a>
+      </nav>
+    </header>
+
+    <section id="contact-form">
+      <h2 class="form-h2">Get In Touch</h2>
+      <form method="get">
+        <label for="name" class="word">NAME</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="message" class="word">INTRODUCE YOURSELF! </label>
+        <textarea
+          name="message"
+          id="message"
+          rows="4"
+          maxlength="150"
+          required
+        ></textarea>
+        <button
+          type="button"
+          class="contact-button button"
+          onclick="submitForm()"
+        >
+          Submit
+        </button>
+      </form>
+      <div id="responseMessage"></div>
+    </section>
+
+    <section id="contact-info">
+      <h2 class="form-h2">Keep along with the journey!</h2>
+      <div class="biz-card">
+        <h4>Scan Me</h4>
+        <img src="/media/linq-qrcode.png" alt="Follow Me" width="350px" />
+      </div>
+    </section>
+
+    <!-- Footer with navigation links and social media icons -->
+    <footer>
+      <p>&copy; 2024 Keshon D. Bowman. All rights reserved.</p>
+      <nav class="footer-nav">
+        <a href="aboutMe.html">About Me</a> |
+        <a href="importantEvents.html">Important Events</a> |
+        <a href="thingsToShare.html">Things to Share</a> |
+        <a href="notablePlaceMap.html">Notable Places Map</a> |
+        <a href="#contactME">Contact Me</a> |
+        <a href="christianWorldview.html">Christian Worldview</a>
+      </nav>
+    </footer>
+    <script src="/scripts/index.js"></script>
+  </body>
+</html>

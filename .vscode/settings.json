@@ -1,10 +1,5 @@
 {
-    "cSpell.words": [
-        "Keshons",
-        "Sasebo",
-        "Simpli"
-    ],
-    "cSpell.ignoreWords": [
-        "Keshon"
-    ]
+  "cSpell.words": ["Keshons", "Sasebo", "Simpli"],
+  "cSpell.ignoreWords": ["Keshon"],
+  "liveServer.settings.port": 5501
 }
