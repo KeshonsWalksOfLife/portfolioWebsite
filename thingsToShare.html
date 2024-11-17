@@ -3,181 +3,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Things To Share</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background: #f2f2f2;
-        color: #222;
-        line-height: 1.6;
-      }
-
-      header,
-      .dropdown {
-        background: #6c0000;
-        color: #fff;
-        padding: 20px 0;
-        display: flex;
-        justify-content: space-between;
-      }
-      /* H1 is the logo with my Name */
-      .Home {
-        padding-left: 250px;
-        font-size: 2rem;
-        text-decoration: none;
-        color: white;
-      }
-      /* Nav Bar used Flex to align the Links */
-      nav {
-        display: flex;
-        padding: 20px;
-        align-items: center;
-        font-size: 1.1rem;
-      }
-
-      nav a {
-        color: #fff;
-        text-decoration: none;
-        margin: 0 35px;
-      }
-      /* Drop Down Menu for the About Me Sections  */
-      .dropdown {
-        display: inline-block;
-        position: relative;
-      }
-
-      /* Hiding the content from the page and giving it a specific width and liveness with the box-shadow  */
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #6c0000;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
-        z-index: 1;
-      }
-
-      /* The color code for the links and put into display box to change vertically */
-      .dropdown-content a {
-        color: white;
-        padding: 12px 8px;
-        display: block;
-      }
-      /* Now for the effect when hovering over the #aboutMe link */
-      .dropdown-content a:hover {
-        background: #6c0000;
-      }
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      /* Section Divided Into Their Respective Areas */
-      section {
-        padding: 20px;
-        margin: 40px auto;
-        max-width: 80vw;
-        background: #fff;
-        border-radius: 8px;
-        box-shadow: 0px 0px 20px rgba (0, 0, 0, 0.1);
-      }
-      /* The Blocks are the boxes themselves */
-      .block {
-        display: flex;
-        justify-content: center;
-        padding: 50px;
-      }
-      /* The Family Box Sizing */
-      #family {
-        max-width: 85%;
-      }
-      /* The family picture for more notability  */
-      .family-first {
-        border-radius: 15px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-      }
-      /* The family text next to the family photo */
-      #family .text {
-        /* border: 1px solid red; */
-        font-size: 4.0em;
-        max-width: 800px;
-        margin-left: 60px;
-        text-align: left;
-      }
-      /* Regular Video Was Over Too Much Data */
-      .iframe {
-        position: relative;
-       width: 1000px;
-       height: 550px;
-      }
-
-      /* Max width on the content creation video */
-      #content-creation {
-        max-width: 65%;
-      }
-      /* The items on the inner box shifted to the center */
-      #content-creation .block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      /* Increase the font size text */
-      #content-creation,
-      #accomplish .text {
-        font-size: 1.5em;
-        text-align: center;
-      }
-      /* Showing max width for all the boxes to fit in the middle */
-      #accomplish {
-        max-width: 100%;
-      }
-      /*  The items on the inner box shifted to the centeR */
-      #accomplish .block {
-        display: flex;
-        flex-direction: column-reverse;
-        text-align: center;
-      }
-      /* Getting all 3 boxes to fit in the middle of page */
-      #accomplish .design {
-        width: 30%;
-        margin: 15px;
-        border: 6px solid black;
-        border-radius: 15px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-      }
-      /* The Final Footer */
-      footer {
-        text-align: center;
-        padding: 10px 0;
-        background: #6c0000;
-        color: #fff;
-        margin-top: 20px;
-      }
-
-      footer > .footer-nav {
-        justify-content: center;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
     <header>
-      <h1><a href="aboutMe.html" class="Home">Keshon D. Bowman</a></h1>
-      <!-- Navigation links to webpage -->
-      <nav class="header-nav">
-        <a href="aboutMe.html">About Me</a>
-        <a href="importantEvents.html">Important Events</a>
-        <a href="notablePlaceMap.html">Notable Places Map</a>
-        <a href="christianWorldview.html">Christian Worldview</a>
-        <a href="contactMe.html">Contact Me</a>
-        <!-- Drop Down Menu For Sections in About Me Page -->
-        <div class="dropdown">
-          <a href="thingsToShare.html">Things to Share</a>
-          <div class="dropdown-content">
-            <a href="#family">Family Pictures</a>
-            <a href="#content-creation">Content Creation</a>
-            <a href="#accomplish">Accomplished</a>
+      <!-- Standard Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top"
+      >
+        <div class="container-fluid">
+          <!-- Brand Name -->
+          <a href="aboutMe.html" class="navbar-brand">Keshon D. Bowman</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            > 
+            <span class="navbar-toggler-icon"></span>
+          </button>  
+  
+          <!-- Navbar Links -->
+          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a href="importantEvents.html" class="nav-link"
+                  >Important Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="thingsToShare.html" class="nav-link">Things To Share</a>
+              </li>
+              <li class="nav-item">
+                <a href="notablePlaceMap.html" class="nav-link"
+                  >Notable Place Map</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="contactMe.html" class="nav-link">Contact Me</a>
+              </li>
+              <li class="nav-item">
+                <a href="christianWorldview.html" class="nav-link"
+                  >Christian Worldview</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  id="aboutMeDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                  active
+                >
+                  About Me
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="aboutMeDropdown">
+                  <li><a href="#hero" class="dropdown-item">Introduction</a></li>
+                  <li>
+                    <a href="#biography" class="dropdown-item">Biography</a>
+                  </li>
+                  <li><a href="#hobbies" class="dropdown-item">Hobbies</a></li>
+                  <li>
+                    <a href="#experiences" class="dropdown-item">Experiences</a>
+                  </li>
+                  <li><a href="#contact" class="dropdown-item">Contact</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <!--First Section Beginning With Family Picture -->
     <section id="family">
       <div class="block first">
@@ -252,5 +158,6 @@
         <a href="christianWorldview.html">Christian Worldview</a>
       </nav>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
   </body>
 </html>

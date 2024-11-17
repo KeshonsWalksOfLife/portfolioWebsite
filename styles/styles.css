@@ -1,130 +1,610 @@
+/* Body Towards Each Page */
+
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background: #f2f2f2;
-    color: #222;
-    line-height: 1.6;
-  }
+  margin: 0;
+  padding: 0;
+  min-width: 1440px;
+  max-height: fit-content;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  color: #222;
+  line-height: 1.6;
+}
+/* Header color for navigation */
+header {
+  background: #6c0000;
+}
+/* Using CSS bootstrap nav brand logo // My name */
 
-  /* Header background to be centered out */
-  header,
-  .dropdown {
-    background: #6c0000;
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-  }
-  /* H1 is the logo with my Name */
-  h1 {
-    padding-left: 250px;
-    font-size: 2rem;
-    margin-bottom: 15px;
-  }
-  /* Nav Bar used Flex to align the Links */
-  nav {
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    font-size: 1.1rem;
-  }
+nav {
+  background: #6c0000;
+}
 
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 35px;
-  }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 35px;
+}
 
-  #h1-fold {
-    font-size: 3em;
-    text-align: center;
-    margin-left: -200px;
-  }
+li.nav-item > .nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: blue;
+  transition: 0.3s;
+}
+
+li.nav-item > .nav-link::hover {
+  background: #6c0000;
+}
+
+li.nav-item > .nav-link:hover::before {
+  width: 100%;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.navbar-nav .nav-link {
+  color: white;
+  margin: 0 15px;
+}
+
+.bg-dark {
+  background: #6c0000 !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  /* background: #fff; */
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba (0, 0, 0, 0.1);
+}
+
+.button {
+  padding: 20px 40px;
+  background: black;
+  color: white;
+  text-decoration: none;
+  margin-left: 80%;
+}
+
+.button:hover {
+  background: #6c0000;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: #6c0000;
+  color: #fff;
+  margin-top: 20px;
+}
+
+footer > .footer-nav {
+  justify-content: center;
+}
+/*  */
+
+/* About Me Page */
+
+/* Since Hero Section is centered, making sure the picture fits in the box correctly */
+section#hero {
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 2px solid blue; */
+}
+
+/* Styling and making sure h2 towards the bottom aligned center */
+.hero-h1 {
+  font-size: 5rem;
+  width: 400px;
+  height: 400px;
+  padding: 80px 0;
+  z-index: -1;
+  /* border: 2px solid green; */
+  display: block;
+  font-family: "Playfair display", serif;
+}
+
+span.h1-1 {
+  font-size: 22rem;
+  /* border: 1px solid green; */
+  display: block;
+  margin-top: -500px;
+  margin-left: -175px;
+  font-weight: 600;
+}
+
+span.h1-2 {
+  /* border: 2px solid red; */
+  font-size: 11.5rem;
+  display: block;
+  margin-top: -120px;
+  margin-left: -145px;
+  font-weight: 600;
+}
+
+span.h1-3 {
+  display: block;
+  font-size: 6.5rem;
+  margin-top: -80px;
+  margin-left: -85px;
+  font-weight: 600;
+}
+
+/* Styling the h2 in the hero for readability and Font effect */
+
+.profile-picture {
+  height: 1000px;
+  width: 800px;
+  float: left;
+  position: relative;
+  top: 200px;
+  left: -90px;
+  max-width: 1220px;
+  /* border: 1px solid red; */
+  clear: left;
+  z-index: 2;
+  opacity: 1;
+  border-radius: 5px;
+}
+
+/* The paragraph is a quote I use for myself, and styling the bottom effect to the color I had used for the nav bar */
+.hero-p {
+  font-size: 2.2em;
+  height: 150px;
+  padding-left: 10px;
+  margin-left: -180px;
+  display: inline-block;
+  /* border: 1px solid red; */
+  font-family: "Raleway", sans-serif;
+}
+
+.body {
+  /* border: 2px solid purple; */
+  width: 700px;
+  height: 400px;
+}
+
+/* Used position relative to align with the box and the text, float right was just right using the section#hero selector */
+
+#biography {
+  max-width: 1620px;
+  width: 2000vw;
+  height: 980px;
+  padding: 30px;
+  /* border: 2px solid blue; */
+  margin: 0 auto;
+  /* background-color: #f2f2f2; */
+  display: flex;
+}
+
+.card .w-50 {
+  margin-left: 60px;
+}
+
+.card {
+  border: 1px solid #f2f2f2;
+  margin-top: 140px;
+  padding: 10px;
+  width: 400px;
+  margin-left: -140px;
+  margin-right: 100px;
+  background: none;
+}
+
+article.box-p1 {
+  /* border: 2px solid red; */
+  width: 350px;
+  height: 450px;
+  margin: 50px;
+}
+
+.card-article {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  line-height: 30px;
+  font-size: 1.2em;
+}
+
+.card-img-top {
+  width: 330px;
+  margin: auto;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+.css {
+  width: 10px;
+  /* border: 2px solid red; */
+}
+.picture-rep {
+  width: 800px;
+  margin-left: -130px;
+}
+
+.rep {
+  width: 120px;
+  margin-top: -80px;
+}
+
+#hobbies {
+  max-width: 100%;
+  height: 20vh;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.item {
+  display: inline-flex;
+  text-align: justify;
+  width: 16%;
+  padding: 40px;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.3rem;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+#collapse {
+  max-width: 100%;
+  margin-left: 120px;
+  background: none;
+}
+.card-section {
+  /* border: 2px solid red; */
+  max-width: 30%;
+  display: inline-flex;
+  margin-left: -35px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba (0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.page-h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+}
+
+.btn {
+  float: right;
+  display: block;
+  margin-right: 5px;
+  clear: left;
+}
+
+a#indeed-link,
+#contact-link {
+  font-size: 1.6rem;
+}
+
+.card-text {
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+  font-family: "Raleway", sans-serif;
+}
+
+/*  */
+
+/* Important Events */
+
+section#projects {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80vw;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px 20px rgba (0, 0, 0, 0.1);
+}
+
+/* The Blocks are the boxes themselves */
+.block {
+  display: flex;
+  justify-content: center;
+  padding: 60px 40px 0 20px;
+}
+
+.sailor {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* The text in the header next to the img */
+.text {
+  max-width: 700px;
+  padding-left: 100px;
+  margin-top: -50px;
+}
+
+/* Creating the box for the second section */
+#job {
+  max-width: 70%;
+  /* border: 2px solid red; */
+}
+
+/* Centering the Picture next to the Job Table*/
+.block.second img {
+  padding: 40px;
+  /* border: 2px solid red; */
+  margin-top: -30px;
+  position: relative;
+  left: 60px;
+}
+
+/* Getting the table pushed away from the picture */
+.block.second table {
+  /* border: 3px solid blue; */
+  margin-left: 50px;
+}
+
+/* Centering the picture next to the projects table */
+.first-project {
+  padding-left: 40px;
+  margin-top: 50px;
+}
+
+/* Creating bigger font for the captions above the tables */
+caption {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* 
+
+         /* Spreading out the tables from inner box */
+table {
+  padding-left: 50px;
+  padding-top: -30px;
+}
+
+/* Spreading out each table row and data in the box for more space */
+tr,
+td {
+  border: 4px solid rgb(160 160 160);
+  padding: 5px 20px;
+  font-size: 1.2em;
+}
+
+/* Adding for size to the font next to the sailor picture */
+h3 {
+  font-size: 3rem;
+}
+
+/*  */
+
+/*Things To Share */
+
+/* The Family Box Sizing */
+#family {
+  max-width: 85%;
+}
+
+/* The family picture for more notability  */
+.family-first {
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* The family text next to the family photo */
+#family .text {
+  /* border: 1px solid red; */
+  font-size: 4em;
+  max-width: 800px;
+  margin-left: 60px;
+  text-align: left;
+}
+
+/* Regular Video Was Over Too Much Data */
+.iframe {
+  position: relative;
+  width: 1000px;
+  height: 550px;
+}
+
+/* Max width on the content creation video */
+#content-creation {
+  max-width: 65%;
+}
+
+/* The items on the inner box shifted to the center */
+#content-creation .block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Increase the font size text */
+#content-creation,
+#accomplish .text {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Showing max width for all the boxes to fit in the middle */
+#accomplish {
+  max-width: 100%;
+}
+
+/*  The items on the inner box shifted to the centeR */
+#accomplish .block {
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: center;
+}
+
+/* Getting all 3 boxes to fit in the middle of page */
+#accomplish .design {
+  width: 30%;
+  margin: 15px;
+  border: 6px solid black;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*  */
+
+/* Notable Place Map */
+
+#h1-fold {
+  font-size: 3em;
+  text-align: center;
+  margin-left: -200px;
+}
 
 /* Map container */
 .map-container {
-    position: relative;
-    width: 100%;
-    max-width: 900px; /* Adjust to control the map's display size */
-    margin: 0 auto;
-    margin-left: 120px;
+  position: relative;
+  width: 100%;
+  max-width: 900px; /* Adjust to control the map's display size */
+  margin: 0 auto;
+  margin-left: 120px;
 }
 
 /* Map image */
 .map-image {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 /* Marker styling */
 .marker {
-    position: absolute;
-    background-color: rgba(255, 0, 0, 0.8); /* Red background with opacity */
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transform: translate(-50%, -50%); /* Centers marker text over the position */
-    cursor: pointer;
-    animation: blinker 10s ease-in-out infinite;
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.8); /* Red background with opacity */
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transform: translate(-50%, -50%); /* Centers marker text over the position */
+  cursor: pointer;
+  animation: blinker 10s ease-in-out infinite;
 }
 
 @keyframes blinker {
-    50% {
-        opacity: 0;
-    }
+  50% {
+    opacity: 0;
+  }
 }
 
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 800px;
+  /* border: 1px solid red; */
+  margin-right: 100px;
+  gap: 15px;
+}
 
+.box img {
+  object-fit: cover;
+  border: 2px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 1px black;
+}
+
+h2.cash:nth-child(2) {
+  right: 670px;
+}
+
+h2.cash:nth-child(4) {
+  right: 420px;
+}
+
+h2.cash:nth-child(6) {
+  right: 150px;
+}
+
+h2.cash:nth-child(8) {
+  top: 750px;
+  right: 560px;
+}
+
+h2.cash:nth-child(10) {
+  top: 750px;
+  right: 310px;
+}
+
+h2.cash:hover {
+  background: #6c0000;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
 /* Hover effect for markers */
 .marker:hover {
-    background-color: rgba(255, 0, 0, 1); /* Brighter red on hover */
-    animation: none;
+  background-color: rgba(255, 0, 0, 1); /* Brighter red on hover */
+  animation: none;
 }
 
-section {
-    display: flex;
+/*  */
+
+/* Christian Worldview */
+
+h2.christian-h2 {
+  position: unset;
 }
+
+.christian {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  /* border: 2px solid red; */
+  letter-spacing: 1px;
+}
+
+/*  */
+
+/* Contact Me  */
+
 /* Section for Christian Worldview Ideas */
-section#christianWorldview, #contact-form, #contact-info {
-    display: block;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+section#christianWorldview,
+#contact-form,
+#contact-info {
+  display: block;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
+/* Contact form padding */
 #contact-form {
   padding-bottom: 100px;
 }
-
+/* Putting content in the center */
 #contact-info {
   text-align: center;
 }
 
-h2.cash, .christian-h2 {
-    position: relative;
-    font-size: 1.3em;
-    color: white;
-    position: absolute;
-    text-align: center;
-    background-color: black;
-    padding: 4px;
-    border-radius: 4px;
-    box-shadow: 0 0 2px 1px black;
-}
-
 h2.form-h2 {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
 }
 
 .word {
-  display: block
+  display: block;
 }
 
 form {
@@ -136,39 +616,30 @@ form {
 
 label {
   padding: 6px;
+  padding-top: 15px;
 }
 
 input#name {
-padding: 4px;  
-width: 295px;
+  padding: 4px;
+  width: 295px;
+  margin-top: 4px;
 }
 
 textarea {
   width: 300px;
   height: 100px;
+  margin-top: 8px;
 }
 
-input#name:focus, textarea:focus {
+input#name:focus,
+textarea:focus {
   box-shadow: 0 0 3px 3px #6c0000;
-  background: #f2f2f2
+  background: #f2f2f2;
 }
-
-.button {
-  padding: 20px 40px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  margin-left: 80%;
-}
-
-/* Testing */
-
-.button:hover {
-  background: #6c0000;
-}
+/* the button referencing the about me and the contact page */
 
 button.contact-button {
-  margin-top: 10px;
+  margin-top: 30px;
   margin-left: 30%;
   /* border: 1px solid red; */
 }
@@ -180,70 +651,68 @@ button.contact-button {
   text-align: center;
 }
 
-h2.christian-h2 {
- position: unset;
+/*  */
+
+/* Lining the h2 correctly through the different web pages */
+h2.cash,
+.christian-h2 {
+  position: relative;
+  font-size: 1.3em;
+  color: white;
+  position: absolute;
+  text-align: center;
+  background-color: black;
+  padding: 4px;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 1px black;
 }
 
-h2.cash:nth-child(2) {
-    right: 670px;
-}
+@media screen and (max-width: 1440px) {
+  body {
+    min-width: 100%;
+  }
 
-h2.cash:nth-child(4) {
-    right: 420px;
-}
-
-h2.cash:nth-child(6) {
-      right: 150px;
-}
-
-h2.cash:nth-child(8) {
-    top: 750px;
-    right: 560px;
-}
-
-h2.cash:nth-child(10) {
-    top: 750px;
-    right: 310px;
-}
-
-h2.cash:hover {
-    background: #6c0000;
-    transition: .2s ease-in-out;
-    cursor: pointer;
-}
-/* The font family for the text */
-.christian {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  /* border: 2px solid red; */
-  letter-spacing: 1px;
-}
-
-.box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 800px;
+  section#hero {
+    max-width: 550px;
     /* border: 1px solid red; */
-    margin-right: 100px; 
-    gap: 15px;
-}
-
-.box img {
-    object-fit: cover;
-    border: 2px solid rgba(0,0,0,0.4);
-    box-shadow: 0 0 5px 1px black;
-}
-
-  footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #6c0000;
-    color: #fff;
-    margin-top: 20px;
   }
 
-  footer > .footer-nav {
-    justify-content: center;
+  .hero-h2 {
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    margin-left: 100px;
+    font-family: "Raleway", sans-serif;
+    font-size: 2rem;
   }
+
+  .p2 {
+    font-size: 6rem;
+    font-weight: 600;
+    margin-left: -15px;
+  }
+
+  .p3 {
+    font-size: 9rem;
+    margin-left: -70px;
+    /* border: 2px solid red; */
+  }
+
+  .hero-p {
+    margin-left: 18px;
+    display: block;
+  }
+
+  span.inline {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1390px) {
+  body {
+    min-width: 100%;
+  }
+
+  section.hero {
+    max-width: 60px;
+  }
+}
