@@ -1,21 +1,29 @@
 /* Body Towards Each Page */
+/*Responsive Web Design. The Don.  */
+
+/* Min-width for desktop 1440px and min-height 1024px */
+:root {
+  -primary-color: #6c0000;
+  -seconday-color: #f2f2f2;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 body {
-  margin: 0;
-  padding: 0;
   min-width: 1440px;
-  max-height: fit-content;
-  box-sizing: border-box;
-  background: #f2f2f2;
+  min-height: 1024px;
+
+  background: var(-secondary-color);
   color: #222;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
-/* Header color for navigation */
-header {
-  background: #6c0000;
-}
-/* Using CSS bootstrap nav brand logo // My name */
 
+/* Nav color */
 nav {
   background: #6c0000;
 }
@@ -24,16 +32,18 @@ nav a {
   color: #fff;
   text-decoration: none;
   margin: 0 35px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
 }
 
-li.nav-item > .nav-link::before {
+nav a::before {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 0;
   width: 0;
   height: 2px;
-  background: blue;
+  background: white;
   transition: 0.3s;
 }
 
@@ -46,15 +56,16 @@ li.nav-item > .nav-link:hover::before {
 }
 
 .navbar-brand {
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.8rem;
   margin-left: 10px;
   text-decoration: none;
 }
 .navbar-nav .nav-link {
   color: white;
   margin: 0 15px;
+  font-size: 1.2rem;
 }
 
 .bg-dark {
@@ -67,23 +78,11 @@ li.nav-item > .nav-link:hover::before {
 
 section {
   padding: 20px;
-  margin: 20px auto;
-  max-width: 1000px;
+  margin: 40px auto;
+  max-width: 1441px;
   /* background: #fff; */
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba (0, 0, 0, 0.1);
-}
-
-.button {
-  padding: 20px 40px;
-  background: black;
-  color: white;
-  text-decoration: none;
-  margin-left: 80%;
-}
-
-.button:hover {
-  background: #6c0000;
 }
 
 footer {
@@ -97,217 +96,95 @@ footer {
 footer > .footer-nav {
   justify-content: center;
 }
-/*  */
 
-/* About Me Page */
+/* About me Section */
 
-/* Since Hero Section is centered, making sure the picture fits in the box correctly */
 section#hero {
-  height: 100vh;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 1441px;
+  padding: 20px 40px;
+  /* border: 2px solid red; */
+}
+
+.word-text {
+  font-family: "Playfair display", serif;
+  clear: left;
+}
+
+.t-1 {
+  font-size: 22rem;
+  font-weight: 500;
+}
+
+.t-2 {
+  font-size: 14em;
+  font-weight: 500;
+  margin-left: 30px;
+}
+
+.t-3 {
+  font-size: 9em;
+  font-weight: 500;
+  margin-top: 50px;
+  margin-left: 120px;
+}
+
+.box-1-header {
+  /* border: 2px solid blue; */
   display: flex;
   flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-evenly;
-  /* border: 2px solid blue; */
+  height: 300px;
 }
 
-/* Styling and making sure h2 towards the bottom aligned center */
-.hero-h1 {
-  font-size: 5rem;
-  width: 400px;
-  height: 400px;
-  padding: 80px 0;
-  z-index: -1;
-  /* border: 2px solid green; */
-  display: block;
-  font-family: "Playfair display", serif;
+.box-2-header {
+  /* border: 3px solid green; */
 }
 
-span.h1-1 {
-  font-size: 22rem;
-  /* border: 1px solid green; */
-  display: block;
-  margin-top: -500px;
-  margin-left: -175px;
-  font-weight: 600;
+.bottom-words {
+  margin-top: -60px;
+  border-radius: 4px;
 }
 
-span.h1-2 {
-  /* border: 2px solid red; */
-  font-size: 11.5rem;
-  display: block;
-  margin-top: -120px;
-  margin-left: -145px;
-  font-weight: 600;
-}
-
-span.h1-3 {
-  display: block;
-  font-size: 6.5rem;
-  margin-top: -80px;
-  margin-left: -85px;
-  font-weight: 600;
-}
-
-/* Styling the h2 in the hero for readability and Font effect */
-
-.profile-picture {
-  height: 1000px;
-  width: 800px;
-  float: left;
+.picture-box {
+  /* border: 2px solid cyan; */
   position: relative;
-  top: 200px;
-  left: -90px;
-  max-width: 1220px;
-  /* border: 1px solid red; */
-  clear: left;
-  z-index: 2;
-  opacity: 1;
-  border-radius: 5px;
+  width: 900px;
+  right: 0px;
+  top: -620px;
 }
 
-/* The paragraph is a quote I use for myself, and styling the bottom effect to the color I had used for the nav bar */
-.hero-p {
-  font-size: 2.2em;
-  height: 150px;
-  padding-left: 10px;
-  margin-left: -180px;
-  display: inline-block;
-  /* border: 1px solid red; */
-  font-family: "Raleway", sans-serif;
-}
-
-.body {
-  /* border: 2px solid purple; */
-  width: 700px;
-  height: 400px;
-}
-
-/* Used position relative to align with the box and the text, float right was just right using the section#hero selector */
-
-#biography {
-  max-width: 1620px;
-  width: 2000vw;
-  height: 980px;
-  padding: 30px;
-  /* border: 2px solid blue; */
-  margin: 0 auto;
-  /* background-color: #f2f2f2; */
-  display: flex;
-}
-
-.card .w-50 {
-  margin-left: 60px;
-}
-
-.card {
-  border: 1px solid #f2f2f2;
-  margin-top: 140px;
-  padding: 10px;
-  width: 400px;
-  margin-left: -140px;
-  margin-right: 100px;
-  background: none;
-}
-
-article.box-p1 {
-  /* border: 2px solid red; */
-  width: 350px;
-  height: 450px;
-  margin: 50px;
-}
-
-.card-article {
-  font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  line-height: 30px;
-  font-size: 1.2em;
-}
-
-.card-img-top {
-  width: 330px;
-  margin: auto;
-  height: auto;
-  margin-bottom: 20px;
-  border-radius: 6px;
-  box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-.css {
-  width: 10px;
-  /* border: 2px solid red; */
-}
 .picture-rep {
-  width: 800px;
-  margin-left: -130px;
+  /* border: 2px solid red; */
+  display: block;
+  margin-top: 90px;
+  margin-left: -160px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: -10px;
+}
+
+img.rep {
+  width: 120px;
+  height: 150px;
+  margin: 0 20px;
+  border: 2px solid red;
+}
+
+#paragraph {
+  /* border: 2px solid green; */
+  width: 900px;
+  margin-left: 240px;
+  margin-top: 120px;
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
 }
 
 .rep {
-  width: 120px;
-  margin-top: -80px;
-}
-
-#hobbies {
-  max-width: 100%;
-  height: 20vh;
-  margin-top: 200px;
-  margin-bottom: 200px;
-}
-
-.item {
-  display: inline-flex;
-  text-align: justify;
-  width: 16%;
-  padding: 40px;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.3rem;
-  line-height: 28px;
-  font-weight: 500;
+  width: 170px;
+  /* border: 2px solid yellow; */
 }
 
 #collapse {
-  max-width: 100%;
-  margin-left: 120px;
-  background: none;
+  display: flex;
 }
-.card-section {
-  /* border: 2px solid red; */
-  max-width: 30%;
-  display: inline-flex;
-  margin-left: -35px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba (0, 0, 0, 0.1);
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.page-h2 {
-  text-align: center;
-  font-family: "Playfair Display", serif;
-}
-
-.btn {
-  float: right;
-  display: block;
-  margin-right: 5px;
-  clear: left;
-}
-
-a#indeed-link,
-#contact-link {
-  font-size: 1.6rem;
-}
-
-.card-text {
-  margin-top: 10px;
-  transition: all 0.3s ease-in-out;
-  font-family: "Raleway", sans-serif;
-}
-
-/*  */
 
 /* Important Events */
 
@@ -665,54 +542,4 @@ h2.cash,
   padding: 4px;
   border-radius: 4px;
   box-shadow: 0 0 2px 1px black;
-}
-
-@media screen and (max-width: 1440px) {
-  body {
-    min-width: 100%;
-  }
-
-  section#hero {
-    max-width: 550px;
-    /* border: 1px solid red; */
-  }
-
-  .hero-h2 {
-    /* border: 1px solid red; */
-    margin-top: 40px;
-    margin-left: 100px;
-    font-family: "Raleway", sans-serif;
-    font-size: 2rem;
-  }
-
-  .p2 {
-    font-size: 6rem;
-    font-weight: 600;
-    margin-left: -15px;
-  }
-
-  .p3 {
-    font-size: 9rem;
-    margin-left: -70px;
-    /* border: 2px solid red; */
-  }
-
-  .hero-p {
-    margin-left: 18px;
-    display: block;
-  }
-
-  span.inline {
-    margin-left: 10px;
-  }
-}
-
-@media screen and (min-width: 1390px) {
-  body {
-    min-width: 100%;
-  }
-
-  section.hero {
-    max-width: 60px;
-  }
 }

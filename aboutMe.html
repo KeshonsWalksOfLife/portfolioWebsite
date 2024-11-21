@@ -7,16 +7,17 @@
     <title>About Me - Keshon D. Bowman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="/styles/styles.css" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+  </head>
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
-          <!-- Brand Name -->
           <a href="aboutMe.html" class="navbar-brand">Keshon D. Bowman</a>
-
           <button
             class="navbar-toggler"
             type="button"
@@ -91,38 +92,47 @@
     </header>
 
     <!-- Hero Sections with profile picture and Intro Text -->
-    <section id="hero">
-      <div class="opacity">
-        <img
+    <section id="hero" class="d-flex flex-column align-items-center justify-content- p-4">
+      
+      <div class="box-2-header">
+        <h1 class="word-text t-1"> Developer.</h1>
+        <h1 class="word-text t-2">Creator.</h1>
+        <h1 class="word-text t-3">Builder. </h1>
+      </div>
+      
+      <div class="box-1-header">
+        <div class="picture-box box-2-header">
+      <img
           src="media/ProfilePicture-2.png"
           alt="Keshons picture"
-          class="profile-picture"
+          class="img-fluid profile-picture"
         />
       </div>
-      <div class="body">
-      <h1 class="hero-h1">
-        <span class="h1-1">Developer.</span> <br><span class="h1-2">Creator.</span> <br>
-       <span class="h1-3">Builder.</span> <br>
-      </h1>
-      <p class="hero-p">
-        I value your passion, I value your pursuit.
-      </p>
-      <div class="picture-rep">
-        <img src="/media/html5.png" alt="HTML5" class="rep" width="800px">
-        <img src="/media/css3.png" alt="CSS3" class="css rep" width="900px">
-        <img src="/media/javascript.png" alt="JavaScript" class="rep" width="800px">
-        <img src="/media/jquery.png" alt="JQuery" class="rep" width="800px">
-        <img src="/media/bootstrap.png" alt="BootStrap" class="rep" width="800px">
+
+      
+      <div class=" bottom-words box-2-header">
+        <p id="paragraph" class="lead text-muted hero-p">
+          I value your passion, I value your pursuit.
+    </p>
+      </div>
+    </section>
+  <article>
+    <div class="bottom-words box-2-header">
+      <div class="d-flex justify-content-center picture-rep">
+        <img src="/media/html5.png" alt="HTML5" class="img-fluid mx-2 rep">
+        <img src="/media/css3.png" alt="CSS3" class="img-fluid mx-2 rep">
+        <img src="/media/javascript.png" alt="JavaScript" class="img-fluid mx-2 rep">
+        <img src="/media/jquery.png" alt="JQuery" class="img-fluid mx-2 rep">
+        <img src="/media/bootstrap.png" alt="BootStrap" class="img-fluid mx-2 rep">
       </div>
     </div>
-    </section>
-
+  </article>
+</div>
     <!-- Bio Section -->
-    <section id="biography">
-      <article class="box-p1">
-      <div class="card card-bio">
-        <div class="card-body">
-          <img src="/media/iphone.jpg" alt="iphone"   class="card-img-top" width="500px" height="300px">
+    <section id="biography" class="container my-5">
+      
+  <div class="card-deck">
+      <div class="card card-1">
           <p class="card-article p-1">
             Hey My People, I'm Keshon! I was born and raised in Lancaster,
             California, and I always had a fascination for technology. Even as a
@@ -135,13 +145,11 @@
             building fun layouts for my MySpace page. I loved the creative freedom
             that technology gave me.
           </p>
-    </div>
-  </article>
+          </div>
+      </div>
 
-  <article class="box-p1">
-    <div class="card card-body">
-      <img src="/media/digital-marketing.jpg" alt="Digital Marketing" class="card-img-top">
-      <p class="card-article p-2">
+      <div class="card card-2">
+        <p class="card-article p-2">
         But you know, even with all of this, I sometimes wondered if technology
         was truly my calling. After serving in the military, I found myself
         pulled back into the world of computers, diving into e-commerce,
@@ -150,11 +158,9 @@
         felt more like me, something that really sparked my passion.
       </p>
     </div>
-  </article>
 
-  <article class="box-p1">
-      <div class="card card-body">
-        <img src="/media/coding.jpg" alt="HTML Code" class="card-img-top">
+
+    <div class="card card-3">
       <p class="card-article p-3">
         Then, one day, I got the chance to build a website for someone, and
         everything changed. I was so excited to finally put my skills to use,
@@ -167,11 +173,9 @@
         me.
       </p>
     </div>
-  </article>
-
-  <article class="box-p1">
-      <div class="card card-body">
-        <img src="/media/creative.jpg" alt="Creativity" class="card-img-top">
+  </div>
+  
+  <div class="card card-4">
       <p class="card-article p-4">
         If you're curious about web design or anything technology-related, I'd
         love to connect with you. Whether you have ideas you'd like to explore
@@ -181,43 +185,42 @@
         connect and see where our ideas can take us.
       </p>
     </div>
-    </div>
-  </article>
+    
     </section>
 
     <!-- Hobbies Section with list of my hobbies -->
-    <section id="hobbies">
-      
-      <ul>
-        <li class="item">
+    <section id="hobbies" class="container my-5">
+
+      <ul class="list-group">
+        <li class="family-benefit">
           I enjoy my family time, I am married with 2 handsome boys. My family
           means the world to me and making sure that they are loved and giving
           the opportunity to be them is what means the world to me.
         </li>
-        <li class="item">
+        <li class="family-benefit">
           I enjoy reading because I like my imagination to take flight and when
           I am reading a book, I look to understand it from the authors point of
           view which can be a different way than how it was actually interpreted
           in the book.
         </li>
-        <li class="item">
+        <li class="family-benefit">
           I love building projects, its starting from nothing and building into
           something and watching my ideas or someone's concept flourish which is
           why I enjoy to do it even in my off time
         </li>
-        <li class="item">
+        <li class="family-benefit">
           I have a love/hate relationship when it comes to working out because
           there are times I don’t want to work out but since I know if I don’t I
           am not challenging my self to where I need to be which is why I need
           to work out the way that I do
         </li>
-        <li class="item">
+        <li class="family-benefit">
           I love making graphic designs, it is watching what I am thinking in my
           mind come into the design and literally watching the concept build in
           a way that I never thought possible, I believe its a beautiful thing
           to see.
         </li>
-        <li class="item">
+        <li class="family-benefit"> 
           I love making videos, ever since I was younger making music and making
           videos has always been an inner passion of mine and I have always
           found the enjoyment in grasping old beats and aligning it in within
@@ -230,8 +233,8 @@
     <!-- Experiences Section with LinkedIn link -->
     
     <section id="collapse" class="mt-5">
-      <div class="card-section card w-50">
-      <div class="card-body">
+
+      <div class="flow card-body card-section card w-50">
         <h2 class="page-h2 card-title">Experiences</h2>
         <p class="card-text">
           I also have a diverse set of experiences highlighted on my LinkedIn
@@ -242,11 +245,11 @@
         </p>
         <button class="btn btn-warning toggle-content">Open Me</button>
       </div>
-     </div>
+    
 
     <!-- Values Section with my personal values -->
-    <div class="card-section card w-50">
-      <div class="flow card-body">
+ 
+      <div class="flow card-body  card-section card w-50">
         <h2 class="page-h2 card-title">Values</h2>
         <p class="card-text">
           One of the most important things to me is staying true to what I
@@ -264,8 +267,7 @@
     </div>
 
     <!-- contact section with linq business card -->
-    <div class="card-section card w-50">
-      <div class="flow card-body">
+      <div class=" flow card-body space card-section card w-50">
         <h2 class="page-h2 card-title">Let's Connect</h2>
         <p class="card-text">
           If you're ready to create something exciting or even if you're just

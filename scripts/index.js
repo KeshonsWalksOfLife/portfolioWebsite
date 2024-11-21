@@ -23,3 +23,9 @@ function submitForm() {
         }
     }
 }
+
+// This is to double check if my inner text is changing in the background
+
+let box = document.getElementById('#box');
+box.textContent = "Change";
+console.log(box);
