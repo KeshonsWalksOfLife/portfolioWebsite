@@ -164,7 +164,8 @@ section#hero {
 img.rep {
   width: 120px;
   height: 150px;
-  margin: 0 20px;
+  padding: -10px;
+  gap: 20px;
   border: 2px solid red;
 }
 
