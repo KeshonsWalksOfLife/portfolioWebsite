@@ -45,6 +45,9 @@
           >
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
+                <a href="aboutMe.html" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
                 <a href="importantEvents.html" class="nav-link"
                   >Important Events</a
                 >
@@ -52,11 +55,6 @@
               <li class="nav-item">
                 <a href="thingsToShare.html" class="nav-link"
                   >Things To Share</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="notablePlaceMap.html" class="nav-link"
-                  >Notable Place Map</a
                 >
               </li>
               <li class="nav-item">
@@ -70,28 +68,15 @@
               <li class="nav-item dropdown">
                 <a
                   href="#"
-                  class="nav-link dropdown-toggle"
+                  class="nav-link"
                   id="aboutMeDropdown"
                   role="button"
                   data-toggle="dropdown"
                   aria-expanded="false"
                   active
                 >
-                  About Me
+                  Notable Place Map
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="aboutMeDropdown">
-                  <li>
-                    <a href="#hero" class="dropdown-item">Introduction</a>
-                  </li>
-                  <li>
-                    <a href="#biography" class="dropdown-item">Biography</a>
-                  </li>
-                  <li><a href="#hobbies" class="dropdown-item">Hobbies</a></li>
-                  <li>
-                    <a href="#experiences" class="dropdown-item">Experiences</a>
-                  </li>
-                  <li><a href="#contact" class="dropdown-item">Contact</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -99,12 +84,16 @@
       </nav>
     </header>
     <!-- The first h1 element on the page -->
-    <div>
-      <h1 id="h1-fold">Places I Have Traveled</h1>
-    </div>
+    <section class="py-5" class="notableInheretance">
+      <div class="h1-container">
+        <h1 id="h1-fold">Places I Have Traveled</h1>
+      </div>
+    </section>
+    
     <!-- The map container with each marker labeled on the picture with inline styles -->
-    <section>
-      <div class="map-container">
+    <section id="notable-content" class="notableInheretance">
+    <section class="map-spacing pb-5">
+      <div class="map-container mx-auto">
         <img
           src="https://worldmapwithcountries.net/wp-content/uploads/2018/07/southeast-asia-map-political-10-southern-and-eastern-quiz.jpg"
           alt="Map"
@@ -117,20 +106,44 @@
         <div class="marker" style="top: 48%; left: 40%">Thailand</div>
         <div class="marker" style="top: 30%; left: 80%">Japan</div>
       </div>
-      <!-- The currency of all locations specific to the map -->
-      <div class="box">
-        <img src="/media/indianRupee.JPG" alt="" width="225px" />
-        <h2 class="cash">India Rupee</h2>
-        <img src="/media/PhilippinePeso.JPG" alt="" width="225px" />
-        <h2 class="cash">Philippine Peso</h2>
-        <img src="/media/singaporeDollars.JPG" alt="" width="225px" />
-        <h2 class="cash">Singaporean Dollars</h2>
-        <img src="/media/thaiBaht.JPG" alt="" width="225px" />
-        <h2 class="cash">Thai Baht</h2>
-        <img src="/media/japaneseYen.JPG" alt="" width="225px" />
-        <h2 class="cash">Japanese Yen</h2>
+    </section>
+    <!-- The currency of all locations specific to the map -->
+    <section class="map-spacing pb-5 notableInheretance" >
+      <div class="currensy-container">
+        <div class="currensy-visuals row justify-content-center text-center">
+          <div class="box col-md-4 mb-4">
+            <img src="/media/indianRupee.JPG" alt="Indian Rupee" width="225px" class="img-box"/>
+            <div class="map-h2">
+            <h2 class="rupee cash mt-3">India Rupee</h2>
+          </div>
+        </div>
+          <div class="box col-md-4 mb-4">
+            <img src="/media/PhilippinePeso.JPG" alt="Philippine Peso" width="225px" class="img-box" />
+            <div class="map-h2">
+            <h2 class="peso cash mt-3">Philippine Peso</h2>
+          </div>
+        </div>
+          <div class="box col-md-4 mb-4">
+            <img src="/media/singaporeDollars.JPG" alt="Singaporean Dollars" width="225px" class="img-box" />
+            <div class="map-h2">
+              <h2 class="dollars cash mt-3">Singaporean Dollars</h2>
+            </div>
+          </div>
+          <div class="box col-md-4 mb-4">
+          <img src="/media/thaiBaht.JPG" alt="Thai Baht" width="225px" class="img-box"/>
+          <div class="map-h2">
+          <h2 class="baht cash mt-3">Thai Baht</h2>
+        </div>
+        </div>
+        <div class="box col-md-4 mb-4">
+          <img src="/media/japaneseYen.JPG" alt="Japanese Yen" width="225px" class="img-box"/>
+          <div class="map-h2">
+          <h2 class="yen cash mt-3">Japanese Yen</h2>
+        </div>
+        </div>
       </div>
     </section>
+  </section>
     <!-- Last the footer -->
     <footer>
       <p>&copy; 2024 Keshon D. Bowman. All rights reserved.</p>
@@ -148,5 +161,6 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

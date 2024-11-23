@@ -36,13 +36,18 @@
             > 
             <span class="navbar-toggler-icon"></span>
           </button>  
-  
+          
           <!-- Navbar Links -->
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
+                <a href="aboutMe.html" class="nav-link"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
                 <a href="importantEvents.html" class="nav-link"
-                  >Important Events</a
+                >Important Events</a
                 >
               </li>
               <li class="nav-item">
@@ -56,34 +61,18 @@
               <li class="nav-item">
                 <a href="contactMe.html" class="nav-link">Contact Me</a>
               </li>
-              <li class="nav-item">
-                <a href="christianWorldview.html" class="nav-link"
-                  >Christian Worldview</a
-                >
-              </li>
               <li class="nav-item dropdown">
                 <a
                   href="#"
-                  class="nav-link dropdown-toggle"
+                  class="nav-link"
                   id="aboutMeDropdown"
                   role="button"
                   data-toggle="dropdown"
                   aria-expanded="false"
                   active
                 >
-                  About Me
+                  Christian Worldview
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="aboutMeDropdown">
-                  <li><a href="#hero" class="dropdown-item">Introduction</a></li>
-                  <li>
-                    <a href="#biography" class="dropdown-item">Biography</a>
-                  </li>
-                  <li><a href="#hobbies" class="dropdown-item">Hobbies</a></li>
-                  <li>
-                    <a href="#experiences" class="dropdown-item">Experiences</a>
-                  </li>
-                  <li><a href="#contact" class="dropdown-item">Contact</a></li>
-                </ul>
               </li>
             </ul>
           </div>
@@ -91,9 +80,11 @@
       </nav>
     </header>
     <!-- Christian Worldview Section -->
-    <section id="christianWorldview">
-      <h2 class="christian-h2">Christian Worldview</h2>
-
+    <section id="christianWorldview" class="py-5">
+      <div class="christian-container container">
+        <h2 class="christian-h2 text-center mb-4">Christian Worldview</h2>
+      </div>
+        <div class="col-md-8 mx-auto">
       <p class="christian">
         My core beliefs are spiritual in nature. Do I believe in God?
         Absolutely. Do I believe Jesus died on the cross for me to live,
@@ -133,6 +124,7 @@
         limitless possibilities. My life is truly filled with joy because that
         is what I believe, and it hasn’t let me down.
       </p>
+    </div>
     </section>
 
     <!-- Footer with navigation links and social media icons -->
@@ -149,5 +141,6 @@
       </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>

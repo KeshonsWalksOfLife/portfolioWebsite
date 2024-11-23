@@ -34,12 +34,12 @@
           <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
+                <a href="aboutMe.html" class="nav-link">About Me</a>
+              </li>
+              <li class="nav-item">
                 <a href="importantEvents.html" class="nav-link"
                   >Important Events</a
                 >
-              </li>
-              <li class="nav-item">
-                <a href="thingsToShare.html" class="nav-link">Things To Share</a>
               </li>
               <li class="nav-item">
                 <a href="notablePlaceMap.html" class="nav-link"
@@ -58,25 +58,20 @@
                 <a
                   href="#"
                   class="nav-link dropdown-toggle"
-                  id="aboutMeDropdown"
+                  id="thingsToShareDropdown"
                   role="button"
                   data-toggle="dropdown"
                   aria-expanded="false"
                   active
                 >
-                  About Me
+                  Things To Share
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="aboutMeDropdown">
-                  <li><a href="#hero" class="dropdown-item">Introduction</a></li>
+                  <li><a href="#family" class="dropdown-item">Family</a></li>
                   <li>
-                    <a href="#biography" class="dropdown-item">Biography</a>
+                    <a href="#content-creation" class="dropdown-item">Content Creation</a>
                   </li>
-                  <li><a href="#hobbies" class="dropdown-item">Hobbies</a></li>
-                  <li>
-                    <a href="#experiences" class="dropdown-item">Experiences</a>
-                  </li>
-                  <li><a href="#contact" class="dropdown-item">Contact</a></li>
-                </ul>
+                  <li><a href="#accomplish" class="dropdown-item">Accomplishments</a></li>
               </li>
             </ul>
           </div>
@@ -85,43 +80,46 @@
     </header>
 
     <!--First Section Beginning With Family Picture -->
-    <section id="family">
-      <div class="block first">
-        <div class="content">
-          <img
-            src="media/family.jpeg"
-            alt="Family First"
-            width="600px"
-            class="family-first"
-          />
-        </div>
-        <!-- Next To Family Photo with A Box For Text -->
-        <div class="text">
-          <h3>
-            Spending quality time with family is what matters most and here is a
-            picture of the family at Great Wolf Lodge!
-          </h3>
+    <section id="family" class="py-5">
+      <div class="first">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img
+              src="media/family.jpeg"
+              alt="Family First"
+              width="600px"
+              class="family-first"
+            />
+          </div>
+          <div class="col-md-6">
+          <div class=" text-center text-md-left">
+            <h1 class="share-h1">
+              Spending quality time with family is what matters most and here is a
+              picture of the family at Great Wolf Lodge!
+            </h1>
+          </div>
         </div>
       </div>
     </section>
+
+
     <!--Next Section Content Creation Video With Text -->
-    <section id="content-creation">
-      <div class="block second">
-        <div class="content">
-            <iframe
-              src="https://player.vimeo.com/video/1021578905?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameborder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-              title="0410"
-              class="iframe"
-            >
-          </iframe>
+    <section id="content-creation" class="py-5">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-md-2">
+              <iframe
+                src="https://player.vimeo.com/video/1021578905?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                title="0410"
+                class="iframe"
+              >
+            </iframe>
           </div>
-          <script src="https://player.vimeo.com/api/player.js"></script>
         </div>
 
-        <div class="text">
-          <h3>
+        <div class="content-sharing sharing-box col-md-6">
+          <h3 class="content-text sharing-text">
             Making Content is amazing to me, the ideas and concepts I can put on
             paper and/or technology makes dreams into reality.
           </h3>
@@ -130,15 +128,15 @@
     </section>
     <!--MY accomplished Graphics and certs I have achieved in this Development -->
     <section id="accomplish">
-      <div class="block third">
+      <div class="sharing-block third">
         <div class="content">
           <img src="media/life-art.JPEG" alt="Life is Art" class="design" />
           <img src="media/quote.JPG" alt="Monday Motivation" class="design" />
           <img src="media/freecodecamp.png" alt="FreeCodeCamp Cert" class="design" />
         </div>
         <!-- Text Above the Third Section -->
-        <div class="text">
-          <h3>
+        <div class="accomplish-box sharing-box">
+          <h3 class="accomplish-text sharing-text">
             Graphic and Web Design is art and being able to adapt to my
             different styles of Art is what has made me become a Better Artist
             Myself.
@@ -159,5 +157,6 @@
       </nav>
     </footer>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>

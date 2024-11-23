@@ -18,7 +18,7 @@
     />
     <link rel="stylesheet" href="/styles/styles.css" />
   </head>
-  <body>
+  <body class="importantEventsPage">
     <div class="background">
       <header>
         <!-- Standard Navbar -->
@@ -44,10 +44,10 @@
               class="collapse navbar-collapse d-flex justify-content-end"
               id="navbarNav"
             >
-              <ul class="navbar-nav ms-auto">
+              <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a href="importantEvents.html" class="nav-link"
-                    >Important Events</a
+                  <a href="aboutMe.html" class="nav-link"
+                    >About Me</a
                   >
                 </li>
                 <li class="nav-item">
@@ -78,27 +78,20 @@
                     aria-expanded="false"
                     active
                   >
-                    About Me
+                    Important Events
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="aboutMeDropdown">
                     <li>
-                      <a href="#hero" class="dropdown-item">Introduction</a>
+                      <a href="#enlisted" class="dropdown-item">Enlisted</a>
                     </li>
+
                     <li>
-                      <a href="#biography" class="dropdown-item">Biography</a>
+                      <a href="#job" class="dropdown-item">Job Experience</a>
                     </li>
+
                     <li>
-                      <a href="#hobbies" class="dropdown-item">Hobbies</a>
+                      <a href="#projects" class="dropdown-item">Projects</a>
                     </li>
-                    <li>
-                      <a href="#experiences" class="dropdown-item"
-                        >Experiences</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#contact" class="dropdown-item">Contact</a>
-                    </li>
-                  </ul>
                 </li>
               </ul>
             </div>
@@ -106,9 +99,10 @@
         </nav>
       </header>
       <!-- Sailor Section For An Important Event -->
-      <section id="enlisted">
-        <div class="block first">
-          <div class="content">
+       <section id="importantEvents">
+      <section id="enlisted" class="py-5">
+          <div class="block col-md-6">
+            <div class="img-fluid">
             <img
               src="media/lancaster-sailor.jpg"
               alt="Sailor"
@@ -117,8 +111,8 @@
             />
           </div>
           <!-- Text next to the Sailor Picture -->
-          <div class="text">
-            <h3>
+          <div class="box-text col-md-6">
+            <h3 class="text">
               Enlisted in the military in 2018, I was stationed in Sasebo, Japan
               and experiencing the life on amphibious ships and lifestyle. This
               is the time that has made me and this is where the journey begins.
@@ -127,67 +121,76 @@
         </div>
       </section>
       <!--Job Description of Picture Of Current Job-->
-      <section id="job">
-        <div class="block second">
-          <div class="content">
-            <img
-              src="media/simplifi_logo.jpg"
-              alt="Simpli.fi"
-              width="300px"
-              class="simpli"
-            />
-          </div>
-          <!--Job Experience Table -->
-          <div class="table">
-            <table>
-              <caption>
+      <section id="job" class="py-5">
+        
+        <div class="row align-items-center">
+          <div class="col-md-4">
+              <img
+                src="media/simplifi_logo.jpg"
+                alt="Simpli.fi"
+                width="300px"
+                class="img-fluid rounded shadow simpli"
+              />
+            </div>
+            <!--Job Experience Table -->
+            <div class="col-md-8">
+              <h4 class="job-h4 mb-4">
                 Job Experience
-              </caption>
-              <tr>
-                <td>May 2024</td>
-                <td>Desktop Support Specialist</td>
-                <td>Simpli.fi</td>
-              </tr>
-              <tr>
-                <td>Feb 2023</td>
-                <td>Account Assistant</td>
-                <td>ACME Brick</td>
-              </tr>
-              <tr>
-                <td>June 2022</td>
-                <td>Real Estate Agent</td>
-                <td>eXp Realty</td>
-              </tr>
-              <tr>
-                <td>January 2018</td>
-                <td>Boatswain Mate 3rd Class</td>
-                <td>U.S Navy</td>
-              </tr>
-            </table>
+            </h4>
+              <table class="experience-table table table-striped">
+                <thead>
+                  <tr>
+                    <td>May 2024</td>
+                    <td>Desktop Support Specialist</td>
+                    <td>Simpli.fi</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Feb 2023</td>
+                    <td>Account Assistant</td>
+                    <td>ACME Brick</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>June 2022</td>
+                    <td>Real Estate Agent</td>
+                    <td>eXp Realty</td>
+                  </tr>
+                  <tr>
+                    <td>January 2018</td>
+                    <td>Boatswain Mate 3rd Class</td>
+                    <td>U.S Navy</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
       <!-- Project Section of First Project Completed -->
-      <section id="projects">
-        <div class="block third">
-          <div class="content">
+      <section id="projects" class="py-5">
+
+        <div class="second container">
+            <h4 class="mb-4 text-center">
+              Projects I Have Built Using Front End Languages
+            </h4>
+            <div class="project-row row">
+              <div class="box-project col-md-4 mb-4">
             <img
               src="media/first-project.png"
               alt="First FinishProjects"
               width="650px"
               class="first-project"
             />
-          </div>
+            </div>
           <!-- Project Table of Each Front End Project Completed -->
-          <div class="table">
+          <div class="project-table table">
             <table>
-              <caption>
-                Projects I Have Built Using Front End Languages
-              </caption>
               <tr>
                 <td>Dec 2023</td>
                 <td>Free Thinking Design Part 1</td>
-                <td>
+                <td class="box-3">
                   This is an idea that was introduced using ChatGPT, a persona
                   was made to start the background on a basic concept for
                   "Sarah's Blog".
@@ -197,7 +200,7 @@
               <tr>
                 <td>Feb 2024</td>
                 <td>Product Card Challenge</td>
-                <td>
+                <td class="box-3">
                   Using HTML and CSS, we were able to gather a responsive feel
                   through changing both pictures for the mobile and desktop
                   version, the finished product is exciting and with more to
@@ -208,7 +211,7 @@
               <tr>
                 <td>Jan 2024</td>
                 <td>JavaScript Clock</td>
-                <td>
+                <td class="box-3">
                   Using vanillaJS 30 day Challenge, we were able to create a
                   loop JavaScript clock that will move simultaneously as the
                   user is viewing the design.
@@ -218,6 +221,7 @@
           </div>
         </div>
       </section>
+    </section>
       <!-- Footer To End The Page -->
       <footer>
         <p>&copy; 2024 Keshon D. Bowman. All rights reserved.</p>
@@ -236,5 +240,6 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>

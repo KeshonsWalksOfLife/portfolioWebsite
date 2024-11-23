@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
+    <div class="full-content"></div>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container-fluid">
@@ -119,11 +120,11 @@
   <article>
     <div class="bottom-words box-2-header">
       <div class="d-flex justify-content-center picture-rep">
-        <img src="/media/html5.png" alt="HTML5" class="img-fluid mx-2 rep">
-        <img src="/media/css3.png" alt="CSS3" class="img-fluid mx-2 rep">
-        <img src="/media/javascript.png" alt="JavaScript" class="img-fluid mx-2 rep">
-        <img src="/media/jquery.png" alt="JQuery" class="img-fluid mx-2 rep">
-        <img src="/media/bootstrap.png" alt="BootStrap" class="img-fluid mx-2 rep">
+        <img src="/media/html5.png" alt="HTML5" class="rep img-fluid mx-2 ">
+        <img src="/media/css3.png" alt="CSS3" class="rep img-fluid mx-2">
+        <img src="/media/javascript.png" alt="JavaScript" class="rep img-fluid mx-2">
+        <img src="/media/jquery.png" alt="JQuery" class="rep img-fluid mx-2">
+        <img src="/media/bootstrap.png" alt="BootStrap" class="rep img-fluid mx-2">
       </div>
     </div>
   </article>
@@ -132,7 +133,7 @@
     <section id="biography" class="container my-5">
       
   <div class="card-deck">
-      <div class="card card-1">
+      <div class="bio-card card card-1">
           <p class="card-article p-1">
             Hey My People, I'm Keshon! I was born and raised in Lancaster,
             California, and I always had a fascination for technology. Even as a
@@ -146,9 +147,9 @@
             that technology gave me.
           </p>
           </div>
-      </div>
+     
 
-      <div class="card card-2">
+      <div class="bio-card card card-2">
         <p class="card-article p-2">
         But you know, even with all of this, I sometimes wondered if technology
         was truly my calling. After serving in the military, I found myself
@@ -160,7 +161,7 @@
     </div>
 
 
-    <div class="card card-3">
+    <div class="bio-card card card-3">
       <p class="card-article p-3">
         Then, one day, I got the chance to build a website for someone, and
         everything changed. I was so excited to finally put my skills to use,
@@ -173,9 +174,9 @@
         me.
       </p>
     </div>
-  </div>
+ 
   
-  <div class="card card-4">
+  <div class="bio-card card card-4">
       <p class="card-article p-4">
         If you're curious about web design or anything technology-related, I'd
         love to connect with you. Whether you have ideas you'd like to explore
@@ -185,14 +186,14 @@
         connect and see where our ideas can take us.
       </p>
     </div>
-    
+  </div>
     </section>
 
     <!-- Hobbies Section with list of my hobbies -->
     <section id="hobbies" class="container my-5">
-
-      <ul class="list-group">
-        <li class="family-benefit">
+    <div class="area-card card">
+      <ul class="list-group list-group-flush">
+        <li class="family-1 family-benefit">
           I enjoy my family time, I am married with 2 handsome boys. My family
           means the world to me and making sure that they are loved and giving
           the opportunity to be them is what means the world to me.
@@ -203,7 +204,7 @@
           view which can be a different way than how it was actually interpreted
           in the book.
         </li>
-        <li class="family-benefit">
+        <li class="family-2 family-benefit">
           I love building projects, its starting from nothing and building into
           something and watching my ideas or someone's concept flourish which is
           why I enjoy to do it even in my off time
@@ -214,7 +215,7 @@
           am not challenging my self to where I need to be which is why I need
           to work out the way that I do
         </li>
-        <li class="family-benefit">
+        <li class="family-3 family-benefit">
           I love making graphic designs, it is watching what I am thinking in my
           mind come into the design and literally watching the concept build in
           a way that I never thought possible, I believe its a beautiful thing
@@ -228,6 +229,7 @@
           through my eyes.
         </li>
       </ul>
+    </div>
     </section>
 
     <!-- Experiences Section with LinkedIn link -->
@@ -308,27 +310,6 @@
       crossorigin="anonymous"
     >
   </script>
-  <script>
-         $(document).ready(function () {
-    // Toggle Card Content
-    $(".toggle-content").click(function () {
-      const cardText = $(this).siblings(".card-text"); // Get the sibling card-text
-      cardText.toggle("fast"); // Toggle visibility
-
-      // Change button text dynamically
-      const isVisible = cardText.is(":visible");
-      $(this).text(isVisible ? "Close Me" : "Open Me");
-    });
-
-    // Responsive Behavior: Reset on Mobile Resize
-    $(window).on("resize", function () {
-      if ($(window).width() < 768) {
-        $(".card-text").hide(); // Hide all card-text elements
-        $(".toggle-content").text("Open Me"); // Reset button text
-      }
-    }).trigger("resize"); // Trigger resize event on page load
-  });
-</script>
   </script>
     <!-- BootStrap Script -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
@@ -337,5 +318,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" 
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
     crossorigin="anonymous"></script>
+    <script src="/scripts/index.js"></script>
   </body>
 </html>

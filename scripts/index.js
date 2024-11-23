@@ -1,3 +1,24 @@
+$(document).ready(function () {
+    // Toggle Card Content
+    $(".toggle-content").click(function () {
+      const cardText = $(this).siblings(".card-text"); // Get the sibling card-text
+      cardText.toggle("fast"); // Toggle visibility
+
+      // Change button text dynamically
+      const isVisible = cardText.is(":visible");
+      $(this).text(isVisible ? "Close Me" : "Open Me");
+    });
+
+    // Responsive Behavior: Reset on Mobile Resize
+    $(window).on("resize", function () {
+      if ($(window).width() < 768) {
+        $(".card-text").hide(); // Hide all card-text elements
+        $(".toggle-content").text("Open Me"); // Reset button text
+      }
+    }).trigger("resize"); // Trigger resize event on page load
+  });
+
+
 function submitForm() {
     // Get the users input value
     const name = document.getElementById('name').value.trim();
