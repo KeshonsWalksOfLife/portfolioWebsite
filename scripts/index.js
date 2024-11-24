@@ -1,4 +1,19 @@
 $(document).ready(function () {
+    // Force Bootstrap dropdown and collapse functionality
+    $(".dropdown-toggle").dropdown();
+    $(".navbar-toggler").on("click", function () {
+      $("#navbarNav").collapse("toggle");
+    });
+  
+    // Ensure dropdown menu closes when clicked outside
+    $(document).on("click", function (e) {
+      if (!$(e.target).closest(".dropdown").length) {
+        $(".dropdown-menu").removeClass("show");
+      }
+    });
+  });
+
+$(document).ready(function () {
     // Toggle Card Content
     $(".toggle-content").click(function () {
       const cardText = $(this).siblings(".card-text"); // Get the sibling card-text

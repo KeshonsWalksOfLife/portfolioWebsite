@@ -11,6 +11,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
   background: var(--secondary-color);
   color: #222;
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 /* Nav color */
@@ -45,6 +45,23 @@ nav a::before {
   height: 2px;
   background: white;
   transition: 0.3s;
+}
+/* Drop Down Menu // Toggle for Responsive Design */
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown-menu.show {
+  display: block;
+}
+
+.navbar-toggle {
+  border: none;
+  outline: none;
+}
+
+.navbar-nav .dropdown-menu {
+  display: none;
 }
 
 li.nav-item > .nav-link::hover {
@@ -629,9 +646,7 @@ h2.form-h2 {
 .word {
   display: block;
 }
-
-input#name:focus,
-textarea:focus {
+.form-group:focus {
   box-shadow: 0 0 3px 3px #6c0000;
   background: #f2f2f2;
 }
@@ -673,6 +688,16 @@ h2.cash,
     background: none;
     border: none;
     scroll-behavior: smooth;
+  }
+
+  .navbar-nav .dropdown-menu {
+    position: static;
+    display: none;
+    margin: 0;
+  }
+
+  .navbar-nav .dropdown-menu.show {
+    display: block;
   }
 
   .word-text {
