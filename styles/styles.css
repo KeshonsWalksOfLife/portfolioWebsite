@@ -33,11 +33,12 @@ h5 {
 
 .main-container {
   /* border: 2px solid red; */
+  margin-bottom: -30px;
 }
 
 #newsletter {
   /* border: 2px solid blue; */
-  height: 30vh;
+  height: 40vh;
   margin: 0 0 0 auto;
   margin-right: 100px;
 }
@@ -59,7 +60,7 @@ h5 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 40px;
+  top: 50px;
 }
 
 .menu-header {
@@ -116,11 +117,56 @@ h5 {
   background: var(--button-color);
   opacity: 0.85;
   color: var(--primary-color);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Footer */
 footer {
   font-size: 0.9rem;
   background: var(--primary-color);
+}
+
+.copy-text {
+  text-align: center;
+}
+
+.social,
+.feedback {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#birthday {
+  /* border: 2px solid red; */
+  margin: 14px auto;
+  display: block;
+  width: 140px;
+  margin-bottom: 20px;
+}
+
+label.birthday {
+  /* border: 2px solid red; */
+  display: block;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+  margin: -42px 0 0 auto;
+  margin-right: 40px;
+  font-size: 1.4em;
+}
+
+.final-button {
+  display: block;
+  width: 150px;
+  margin: 0 0 0 auto;
+  margin-right: auto;
+}
+
+.button {
+  margin-left: 150px;
 }

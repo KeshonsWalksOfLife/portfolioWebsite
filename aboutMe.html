@@ -9,10 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -68,7 +74,7 @@
         <div class="col-md-6" id="newsletter">
           <div class="card shadow-sm">
             <div class="card-body">
-              <h5 class="text card-title">Follow My Newsletter</h5>
+              <h5 class="text-center text card-title">Follow My Newsletter</h5>
               <p class="text-muted">
                 Get free consultations and website builds for 20 people! Sign up
                 now to get started.
@@ -81,16 +87,14 @@
                   placeholder="Your Email"
                   required
                 />
-                <label for="birthday">Your Birthday: </label>
+                <label for="birthday" class="birthday">Your Birthday: </label>
                 <input
                   type="date"
                   name="birthday"
                   id="birthday"
                   placeholder="birthday"
                 />
-                <button type="submit" class="btn button w-100">
-                  Subscribe
-                </button>
+                <button type="submit" class="btn button w-50">Subscribe</button>
               </form>
             </div>
           </div>
@@ -109,7 +113,7 @@
                 <p class="card-text">
                   A short description of the project with a focus on results.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="final-button btn">Read More</a>
               </div>
             </div>
           </div>
@@ -122,7 +126,7 @@
                 <p class="card-text">
                   A short description of the project with a focus on results.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="final-button btn">Read More</a>
               </div>
             </div>
           </div>
@@ -132,7 +136,23 @@
 
     <!-- Footer -->
     <footer class="text-center py-3 mt-5">
-      <p class="text">&copy; 2024 Keshon D. Bowman. All rights reserved.</p>
+      <p class="copy-text text">
+        &copy; 2024 Keshon D. Bowman. All rights reserved.
+      </p>
+      <div class="social">
+        <i class="fa fa-envelope" aria-hidden="true"><a href=""></a></i>
+        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <button
+          type="submit"
+          name="feedback"
+          value="feedback"
+          aria-placeholder="feedback"
+          class="btn feedback"
+        >
+          Feedback
+        </button>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
