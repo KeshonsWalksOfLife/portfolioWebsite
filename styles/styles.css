@@ -170,3 +170,8 @@ label.birthday {
 .button {
   margin-left: 150px;
 }
+
+.feedback-text {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
