@@ -186,10 +186,12 @@ label.birthday {
   font-weight: bold;
 }
 
-.portfolio-card {
+#project-carousel {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  margin: -20px 0 0 auto;
+  margin-right: 40px;
+  border: 2px solid blue;
 }
 
 .carousel-control-prev-icon,
@@ -203,7 +205,15 @@ label.birthday {
   transition: all 0.3s ease-in-out;
 }
 
-.card-img-top {
-  width: 600px;
-  margin: 0 auto;
+.portfolio-card .card-img-top {
+  width: 450px;
+  height: 400px;
+  /* object-fit: cover; */
+  margin: 20px auto;
+  border: 2px solid red;
+  display: block;
+}
+
+#freeThinkingDesign {
+  padding: 0;
 }
