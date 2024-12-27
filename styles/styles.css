@@ -31,6 +31,10 @@ h5 {
   font-family: "Playfair Display", serif;
 }
 
+.portfolio-h2 {
+  font-weight: bold;
+}
+
 .main-container {
   /* border: 2px solid red; */
   margin-bottom: -30px;
@@ -174,4 +178,32 @@ label.birthday {
 .feedback-text {
   text-decoration: none;
   color: var(--secondary-color);
+}
+
+/* Portfolio Page  */
+
+.portfolio-h2 {
+  font-weight: bold;
+}
+
+.portfolio-card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background: var(--button-color);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-img-top {
+  width: 600px;
+  margin: 0 auto;
 }
