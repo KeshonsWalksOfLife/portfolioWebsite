@@ -87,17 +87,6 @@ h5 {
   background: var(--secondary-color);
 }
 
-/* Projects Section */
-#projects .card {
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background: var(--secondary-color);
-}
-
-#projects .card-body {
-  text-align: left;
-}
-
 .text {
   color: var(--button-color);
 }
@@ -122,6 +111,17 @@ h5 {
   opacity: 0.85;
   color: var(--primary-color);
   transition: all 0.3s ease-in-out;
+}
+
+/* Projects Section */
+#projects .card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: var(--secondary-color);
+}
+
+#projects .card-body {
+  text-align: left;
 }
 
 /* Footer */
@@ -182,16 +182,81 @@ label.birthday {
 
 /* Portfolio Page  */
 
+.main-content {
+  display: flex;
+  margin-bottom: -20px;
+}
+
 .portfolio-h2 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--button-color);
+  margin: 20px 0;
+  text-align: center;
+}
+
+.text-muted {
+  font-family: "Raleway", sans-serif;
+}
+
+.col-md-5 p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--button-color);
+  margin-bottom: 10px;
+}
+
+.cta-link {
+  color: var(--button-color);
   font-weight: bold;
+  text-decoration: underline;
+}
+
+.cta-link:hover {
+  color: var(--primary-color);
+  background: var(--button-color);
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolioDisc {
+  width: 800px;
+  height: 510px;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col-md-5 {
+  padding: 20px;
+  background-color: var(--secondary-color);
+  border: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  height: 70vh;
+}
+
+#portfolio .carousel-inner {
+  /* border: 2px solid red; */
+  width: 100%;
+  margin: 20px auto;
 }
 
 #project-carousel {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: -20px 0 0 auto;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  margin: -50px 0 0 auto;
   margin-right: 40px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  position: absolute;
+  right: -15px;
+  top: 100px;
 }
 
 .carousel-control-prev-icon,
@@ -206,10 +271,21 @@ label.birthday {
 }
 
 .portfolio-card .card-img-top {
-  width: 450px;
-  height: 400px;
-  /* object-fit: cover; */
-  margin: 20px auto;
-  border: 2px solid red;
-  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin: auto;
+  /* border: 2px solid red; */
+}
+
+#contact-lead {
+  width: 100vw;
+  height: 25vh;
+  margin-top: 350px;
+}
+
+.container-sm {
+  margin: 0 0 0 auto;
+  margin-right: 80px;
+  margin-top: 30px;
 }
