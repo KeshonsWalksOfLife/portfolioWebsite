@@ -32,7 +32,6 @@
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
           >
-            ""
           </button>
           <div
             class="collapse navbar-collapse justify-content-end"
@@ -52,6 +51,102 @@
         </div>
       </nav>
     </header>
+
+    <!-- The main content  -->
+    <main class="contact-main container mt-5">
+      <div class="row">
+        <!-- The start of the 1st section -->
+        <div class="section-1 col-md-6 p-4 bg-light">
+          <h2 class="portfolio-h2">Follow My Newsletter</h2>
+          <p class="text-muted">
+            Stay updated with my latest projects, tips, and exclusive content.
+          </p>
+          <form action="#" method="post" class="mt-4">
+            <div class="mb-3">
+              <label for="name" class="form-label text">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Your Full Name"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="name" class="form-label text">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Your Email Address"
+                required
+              />
+            </div>
+
+            <label for="birthday" class="birthday">Your Birthday: </label>
+            <input
+              type="date"
+              name="birthday"
+              id="birthday"
+              placeholder="birthday"
+            />
+
+            <a href="/DOM/contact.html">
+              <button class="btn button">Subscribe</button>
+            </a>
+          </div>
+        </form>
+
+         <!-- The beginning of the third section -->
+         <div class="section-2 col-md-6 p-4 bg-body flex-column">
+           <h5 class="contact-h5">Send Feedback</h5>
+           <p class="text-muted">
+             Have questions or suggestions? Let me know!
+            </p>
+
+            <form action="#" method="post" class="mt-4 mb-6" id="feedback-form">
+            <label for="name" class="form-label text">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Your Full Name"
+              required
+            />
+
+
+          <div class="mb-3">
+            <label for="name" class="form-label text">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+
+          <div class="mb-3 ">
+            <label for="preferred">Preferred Method</label>
+            <select name="preferred" id="preferred">
+              <option value="Phone active" id="literal">
+                Phone
+              </option>
+              <option value="Email" id="literal">Email </option>
+              <option value="Social" id="literal">Social</option>
+            </select>
+            <div id="response" class="mt-2 text-muted"></div>
+          </div>
+
+          <div class="mb-3">
+            <button type="submit" class="btn button text-center" id="">Send Feedback</button>
+          </div>
+        
+    </main>
 
     <!-- Footer -->
     <footer class="text-center py-3 mt-5">

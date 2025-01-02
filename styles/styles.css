@@ -288,3 +288,13 @@ label.birthday {
   margin-right: 80px;
   margin-top: 30px;
 }
+
+.contact-main .section-1,
+.section-2 {
+  border: 2px solid red;
+}
+
+#preferred {
+  width: 200px;
+  margin-left: 25px;
+}
