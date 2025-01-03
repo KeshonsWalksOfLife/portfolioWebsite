@@ -71,59 +71,6 @@ h5 {
   margin: 0 50px;
 }
 
-/* Hero Section */
-#hero {
-  text-align: left;
-}
-
-#hero img {
-  border: 3px solid var(--button-color);
-  border-radius: 50%;
-}
-
-#newsletter .card {
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  background: var(--secondary-color);
-}
-
-.text {
-  color: var(--button-color);
-}
-
-.text-h1 {
-  /* border: 2px solid red; */
-  text-align: center;
-}
-
-.bold {
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-}
-
-.btn {
-  background: var(--button-color);
-  color: var(--secondary-color);
-}
-
-.btn:hover {
-  background: var(--button-color);
-  opacity: 0.85;
-  color: var(--primary-color);
-  transition: all 0.3s ease-in-out;
-}
-
-/* Projects Section */
-#projects .card {
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background: var(--secondary-color);
-}
-
-#projects .card-body {
-  text-align: left;
-}
-
 /* Footer */
 footer {
   font-size: 0.9rem;
@@ -181,7 +128,80 @@ label.birthday {
   color: var(--secondary-color);
 }
 
+/* Hero Section */
+#hero {
+  text-align: left;
+}
+
+#hero img {
+  border: 3px solid var(--button-color);
+  border-radius: 50%;
+}
+
+#newsletter .card {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--secondary-color);
+}
+
+.text {
+  color: var(--button-color);
+}
+
+.text-h1 {
+  /* border: 2px solid red; */
+  text-align: center;
+}
+
+.bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.btn {
+  background: var(--button-color);
+  color: var(--secondary-color);
+}
+
+.btn:hover {
+  background: var(--button-color);
+  opacity: 0.85;
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Projects Section */
+#projects .card {
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: var(--secondary-color);
+  border: 2px solid red;
+}
+
+#vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+section#portfolio {
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
+}
+
+#project-carousel {
+  width: 100vw;
+  height: auto;
+}
+
+#projects .card-body {
+  text-align: left;
+}
+
 /* Portfolio Page  */
+
+.portfolio-card {
+}
 
 .main-content {
   display: flex;
@@ -192,7 +212,7 @@ label.birthday {
   font-weight: 700;
   font-size: 2.8rem;
   color: var(--button-color);
-  margin: 20px 0;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -200,11 +220,26 @@ label.birthday {
   font-family: "Raleway", sans-serif;
 }
 
-.col-md-5 p {
+.portfolio-header {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--button-color);
   margin-bottom: 10px;
+}
+
+.portfolioDisc {
+  width: 100%;
+  height: 40%;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 6px;
+  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio .carousel-inner {
+  border: 2px solid red;
+  width: 100%;
+  margin: 20px 0 0 10px;
 }
 
 .cta-link {
@@ -221,50 +256,12 @@ label.birthday {
   transition: all 0.3s ease-in-out;
 }
 
-.portfolioDisc {
-  width: 800px;
-  height: 510px;
-  margin-left: 20px;
-  border: 2px solid black;
-  border-radius: 6px;
-  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
+.carousel-control-prev,
+.carousel-control-next {
+  background: var(--secondary-color);
 }
 
-.col-md-5 {
-  padding: 20px;
-  background-color: var(--secondary-color);
-  border: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  width: 100%;
-  height: 70vh;
-}
-
-#portfolio .carousel-inner {
-  /* border: 2px solid red; */
-  width: 100%;
-  margin: 20px auto;
-}
-
-#project-carousel {
-  width: 100%;
-  max-width: 900px;
-  height: auto;
-  border-radius: 8px;
-  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-  margin: -50px 0 0 auto;
-  margin-right: 40px;
-  /* border: 2px solid blue; */
-  position: absolute;
-  right: -15px;
-  top: 100px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background: var(--button-color);
-}
-
+/*
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -272,12 +269,12 @@ label.birthday {
 }
 
 .portfolio-card .card-img-top {
-  width: 100%;
   height: 300px;
-  object-fit: cover;
-  margin: auto;
-  /* border: 2px solid red; */
+  object-fit: contain;
+  margin: 10px auto;
+  /* border: 2px solid red; 
 }
+*/
 
 /* Contact Page */
 
