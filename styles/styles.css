@@ -141,7 +141,8 @@ footer {
   align-items: center;
 }
 
-#birthday {
+#birthday,
+#newsletter-birthday {
   /* border: 2px solid red; */
   margin: 14px auto;
   display: block;
@@ -277,10 +278,21 @@ label.birthday {
   margin: auto;
   /* border: 2px solid red; */
 }
+
+/* Contact Page */
+
+.contact-main {
+  width: 100%;
+}
+
 #contact-lead {
-  width: 100vw;
+  /* width: 100vw; */
   height: 25vh;
   margin-top: 350px;
+}
+
+.contact-main .d-flex {
+  gap: 20px;
 }
 
 .container-sm {
@@ -289,12 +301,23 @@ label.birthday {
   margin-top: 30px;
 }
 
-.contact-main .section-1,
-.section-2 {
-  border: 2px solid red;
+.sectional {
+  flex: 1;
+  width: 50%;
+  /* border: 2px solid red; */
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.1);
 }
 
 #preferred {
   width: 200px;
   margin-left: 25px;
+}
+
+#newsletter-btn,
+#feedback-btn {
+  display: block;
+  margin: 0 auto;
+  /* border: 2px solid red; */
+  padding: 10px 20px;
 }

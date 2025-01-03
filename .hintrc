@@ -3,6 +3,13 @@
     "development"
   ],
   "hints": {
-    "button-type": "off"
+    "button-type": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "input-button-name": "off",
+        "button-name": "off"
+      }
+    ]
   }
 }

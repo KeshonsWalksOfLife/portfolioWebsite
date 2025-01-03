@@ -31,8 +31,8 @@
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
-          >
-          </button>
+          ></button>
+          
           <div
             class="collapse navbar-collapse justify-content-end"
             id="navbarNav"
@@ -53,10 +53,10 @@
     </header>
 
     <!-- The main content  -->
-    <main class="contact-main container mt-5">
-      <div class="row">
+  <main class="contact-main container mt-5">
+      <div class="d-flex gap-4">
         <!-- The start of the 1st section -->
-        <div class="section-1 col-md-6 p-4 bg-light">
+        <section class="sectional col-md-6 p-4 bg-light">
           <h2 class="portfolio-h2">Follow My Newsletter</h2>
           <p class="text-muted">
             Stay updated with my latest projects, tips, and exclusive content.
@@ -67,7 +67,7 @@
               <input
                 type="text"
                 class="form-control"
-                id="name"
+                id="newsletter-name"
                 name="name"
                 placeholder="Your Full Name"
                 required
@@ -79,7 +79,7 @@
               <input
                 type="email"
                 class="form-control"
-                id="email"
+                id="newsletter-email"
                 name="email"
                 placeholder="Your Email Address"
                 required
@@ -90,29 +90,29 @@
             <input
               type="date"
               name="birthday"
-              id="birthday"
+              id="newsletter-birthday"
               placeholder="birthday"
             />
 
-            <a href="/DOM/contact.html">
-              <button class="btn button">Subscribe</button>
-            </a>
-          </div>
+            
+              <button type="submit" class="btn button" id="newsletter-btn">Subscribe</button>
+         
         </form>
+      </section>
 
          <!-- The beginning of the third section -->
-         <div class="section-2 col-md-6 p-4 bg-body flex-column">
+        <section class="sectional col-md-6 p-4 bg-body ">
            <h5 class="contact-h5">Send Feedback</h5>
            <p class="text-muted">
              Have questions or suggestions? Let me know!
             </p>
 
-            <form action="#" method="post" class="mt-4 mb-6" id="feedback-form">
+        <form action="#" method="post" class="mt-4 mb-6" id="feedback-form">
             <label for="name" class="form-label text">Name</label>
             <input
               type="text"
               class="form-control"
-              id="name"
+              id="feedback-name"
               name="name"
               placeholder="Your Full Name"
               required
@@ -123,7 +123,7 @@
             <label for="name" class="form-label text">Message</label>
             <textarea
               class="form-control"
-              id="message"
+              id="feedback-message"
               name="message"
               placeholder="Your Message"
               required
@@ -133,20 +133,22 @@
           <div class="mb-3 ">
             <label for="preferred">Preferred Method</label>
             <select name="preferred" id="preferred">
-              <option value="Phone active" id="literal">
+              <option value="Phone">
                 Phone
               </option>
-              <option value="Email" id="literal">Email </option>
-              <option value="Social" id="literal">Social</option>
+              <option value="Email">Email </option>
+              <option value="Social">Social</option>
             </select>
+
             <div id="response" class="mt-2 text-muted"></div>
           </div>
 
           <div class="mb-3">
-            <button type="submit" class="btn button text-center" id="">Send Feedback</button>
+            <button type="submit" class="btn button" id="feedback-btn">Send Feedback</button>
           </div>
-        
-    </main>
+      </form>
+    </section>
+  </main>
 
     <!-- Footer -->
     <footer class="text-center py-3 mt-5">
