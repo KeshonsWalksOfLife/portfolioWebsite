@@ -321,3 +321,30 @@ label.birthday {
   /* border: 2px solid red; */
   padding: 10px 20px;
 }
+
+.thank-btn {
+  margin-left: -10.5%;
+}
+
+.thank-you-main {
+  padding: 50px 0;
+}
+
+.thank-you-main h1 {
+  font-size: 3rem;
+  font-family: 700;
+}
+
+.thank-you-main p {
+  font-size: 1.2rem;
+  color: var(--button-color);
+}
+
+.social i {
+  color: var(--button-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.social i:hover {
+  opacity: 0.7;
+}
