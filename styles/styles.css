@@ -74,7 +74,8 @@ h5 {
 /* Footer */
 footer {
   font-size: 0.9rem;
-  background: var(--primary-color);
+  /* background: var(--primary-color); */
+  /* border: 2px solid red; */
 }
 
 .copy-text {
@@ -128,7 +129,13 @@ label.birthday {
   color: var(--secondary-color);
 }
 
-/* Hero Section */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Home Page */
 #hero {
   text-align: left;
 }
@@ -141,6 +148,11 @@ label.birthday {
 #newsletter .card {
   border-radius: 8px;
   border: 1px solid #ccc;
+  background: var(--secondary-color);
+}
+
+.homeCard {
+  /* border: 2px solid red; */
   background: var(--secondary-color);
 }
 
@@ -170,50 +182,70 @@ label.birthday {
   transition: all 0.3s ease-in-out;
 }
 
-/* Projects Section */
-#projects .card {
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background: var(--secondary-color);
-  border: 2px solid red;
+/* Portfolio Page  */
+
+.portPage {
+  margin-bottom: -20px;
 }
 
-#vertical {
+#main-content {
+  width: 90%;
+  height: 80vh;
+  /* border: 2px solid red; */
+  /* background: var(--secondary-color); */
+  margin-bottom: -55px;
+}
+
+#carouselCaption {
+  width: 100%;
+}
+
+.vertical {
+  /* border: 2px solid purple; */
   display: flex;
   flex-direction: column;
 }
 
-section#portfolio {
+.portfolioDisc {
+  margin-top: 10px;
+  width: 42%;
+}
+
+#portRow {
+  /* border: 2px solid red;  */
+  background: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.1);
+}
+
+#portfolio {
+  display: block;
+  position: absolute;
+  width: 45vw;
+  margin-left: -10px;
+  margin-top: -20px;
+}
+
+#vertical .carousel-item {
+  /* border: 2px solid blue; */
+  border-radius: 8px;
+  box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.1);
   width: 100%;
-  height: 100%;
-  border: 2px solid red;
-}
-
-#project-carousel {
-  width: 100vw;
-  height: auto;
-}
-
-#projects .card-body {
-  text-align: left;
-}
-
-/* Portfolio Page  */
-
-.portfolio-card {
-}
-
-.main-content {
-  display: flex;
+  height: 60vh;
   margin-bottom: -20px;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
 }
 
 .portfolio-h2 {
   font-weight: 700;
   font-size: 2.8rem;
   color: var(--button-color);
-  margin: 10px 0;
-  text-align: center;
+  margin: 30px 0;
+  text-align: justify;
 }
 
 .text-muted {
@@ -224,22 +256,8 @@ section#portfolio {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--button-color);
-  margin-bottom: 10px;
-}
-
-.portfolioDisc {
-  width: 100%;
-  height: 40%;
-  margin-left: 20px;
-  border: 2px solid black;
-  border-radius: 6px;
-  box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.1);
-}
-
-#portfolio .carousel-inner {
-  border: 2px solid red;
-  width: 100%;
-  margin: 20px 0 0 10px;
+  margin-top: 20px;
+  padding-top: 40px;
 }
 
 .cta-link {
@@ -256,25 +274,43 @@ section#portfolio {
   transition: all 0.3s ease-in-out;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+#contact-lead {
+  height: 25vh;
+  margin-top: 380px;
+  /* border: 2px solid red; */
+}
+
+.container-sm {
+  margin: 0 0 0 auto;
+  margin-left: -10px;
+  margin-right: 25px;
+  margin-top: 50px;
+  width: 100%;
+  /* border: 2px solid blue; */
+}
+
+.shapeCard {
+  /* border: 2px solid red; */
   background: var(--secondary-color);
+  box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
 }
 
-/*
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
+.carousel-caption {
+  width: 220px;
+  /* border: 2px solid red; */
+  margin-left: -110px;
+  top: -20px;
 }
 
-.portfolio-card .card-img-top {
-  height: 300px;
-  object-fit: contain;
-  margin: 10px auto;
-  /* border: 2px solid red; 
+.box-disc {
+  background: var(--button-color);
+  color: var(--secondary-color);
+  width: 100%;
+  margin: 0 auto 0 0;
+  border-radius: 8px;
+  /* border: 2px solid red; */
 }
-*/
 
 /* Contact Page */
 
@@ -282,20 +318,8 @@ section#portfolio {
   width: 100%;
 }
 
-#contact-lead {
-  /* width: 100vw; */
-  height: 25vh;
-  margin-top: 350px;
-}
-
 .contact-main .d-flex {
   gap: 20px;
-}
-
-.container-sm {
-  margin: 0 0 0 auto;
-  margin-right: 80px;
-  margin-top: 30px;
 }
 
 .sectional {
