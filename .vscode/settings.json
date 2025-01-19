@@ -5,6 +5,9 @@
     "Simpli",
     "Springside"
   ],
-  "cSpell.ignoreWords": ["Keshon"],
+  "cSpell.ignoreWords": [
+    "Keshon",
+    "onhover"
+  ],
   "liveServer.settings.port": 5501
 }

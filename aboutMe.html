@@ -22,165 +22,170 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <!-- Navigation -->
-    <header class="menu-header">
-      <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container-fluid">
-          <a href="aboutMe.html" class="text navbar-brand">The Don.</a>
-          <button
-            class="navbar-toggler navbar-toggler-icon"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <!-- <span class="navbar-toggler-icon"></span> -->
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a href="/DOM/portfolio.html" class="text nav-link"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="/DOM/contact.html" class="text nav-link">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Main Content -->
-    <main class="main-container container">
-      <!-- Top Section -->
-      <div class="row mt-4">
-        <!-- Hero Section -->
-        <div class="col-md-6" id="hero">
-          <img
-            src="/media/logo-body.png"
-            alt="Keshon D. Bowman"
-            class="img-fluid rounded-circle mb-3"
-            width="150"
-          />
-          <h1 class="text-h1 text d-flex justify-content-center">
-            Developer. Creator. Builder.
-          </h1>
-          <p class="bold text">I value your passion. I value your pursuit.</p>
-        </div>
-
-        <!-- Newsletter Section -->
-
-        <div class="col-md-6" id="newsletter">
-          <div class="card shadow-sm">
-            <div class="card-body">
-              <h5 class="text-center text card-title">Follow My Newsletter</h5>
-              <p class="text-muted">
-                Get free consultations and website builds for 10 people! Sign up
-                now to get started.
-              </p>
-
-              <form action="/DOM/thankYouPage.html" method="POST">
-                <input
-                  type="email"
-                  class="form-control mb-2"
-                  placeholder="Your Email"
-                  required
-                />
-                <label for="birthday" class="birthday">Your Birthday: </label>
-                <input
-                  type="date"
-                  name="birthday"
-                  id="birthday"
-                  placeholder="birthday"
-                />
-
-                <a href="/DOM/contact.html" class="feedback-text">
-                  <button type="submit" class="btn button w-50">
-                    Subscribe
-                  </button></a
-                >
-              </form>
+    <div id="interactive-background">
+      <!-- Navigation -->
+      <header class="menu-header">
+        <nav class="navbar navbar-expand-lg sticky-top">
+          <div class="container-fluid">
+            <a href="aboutMe.html" class="text navbar-brand">The Don.</a>
+            <button
+              class="navbar-toggler navbar-toggler-icon"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+            >
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end"
+              id="navbarNav"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="/DOM/portfolio.html" class="text nav-link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="/DOM/contact.html" class="text nav-link">Contact</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
-      </div>
+        </nav>
+      </header>
 
-      <!-- Projects Section -->
-      <section id="projects" class="mt-5">
-        <h3 class="text text-center mb-4">Portfolio Projects</h3>
-        <div class="row g-4">
-          <!-- Project 1 -->
-          <div class="col-md-6">
-            <div class="homeCard card shadow-sm">
-              <div class="card-body">
-                <h5 class="text card-title">Project 1</h5>
-                <p class="card-text">
-                  A short description of the project with a focus on results.
-                </p>
-                <a href="/DOM/portfolio.html" class="final-button btn"
-                  >Read More</a
-                >
-              </div>
-            </div>
+      <!-- Main Content -->
+      <main class="main-container container">
+        <!-- Top Section -->
+        <div class="row mt-4">
+          <!-- Hero Section -->
+          <div class="col-md-6" id="hero">
+            <img
+              src="/media/logo-body.png"
+              alt="Keshon D. Bowman"
+              class="img-fluid rounded-circle mb-3"
+              width="150"
+            />
+            <h1 class="text-h1 text d-flex justify-content-center">
+              Developer. Creator. Builder.
+            </h1>
+            <p class="bold text">I value your passion. I value your pursuit.</p>
           </div>
-          <!-- Project 2 -->
 
-          <div class="col-md-6">
-            <div class="homeCard card shadow-sm">
+          <!-- Newsletter Section -->
+
+          <div class="col-md-6" id="newsletter">
+            <div class="card shadow-sm">
               <div class="card-body">
-                <h5 class="text card-title">Project 2</h5>
-                <p class="card-text">
-                  A short description of the project with a focus on results.
+                <h5 class="text-center text card-title">
+                  Follow My Newsletter
+                </h5>
+                <p class="text-muted">
+                  Get free consultations and website builds for 10 people! Sign
+                  up now to get started.
                 </p>
-                <a href="/DOM/portfolio.html" class="final-button btn"
-                  >Read More</a
-                >
+
+                <form action="/DOM/thankYouPage.html" method="POST">
+                  <input
+                    type="email"
+                    class="form-control mb-2"
+                    placeholder="Your Email"
+                    required
+                  />
+                  <label for="birthday" class="birthday">Your Birthday: </label>
+                  <input
+                    type="date"
+                    name="birthday"
+                    id="birthday"
+                    placeholder="birthday"
+                  />
+
+                  <a href="/DOM/contact.html" class="feedback-text">
+                    <button type="submit" class="btn button w-50">
+                      Subscribe
+                    </button></a
+                  >
+                </form>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="text-center py-3 mt-5">
-      <p class="copy-text text">
-        &copy; 2024 Keshon D. Bowman. All rights reserved.
-      </p>
-      <div class="social">
-        <i class="fa fa-envelope" aria-hidden="true"
-          ><a
-            href="https://app.brevo.com/automation/edit/1?prebuilt=true&p_step=1"
-          ></a
-        ></i>
-        <i class="fa fa-youtube-play" aria-hidden="true"
-          ><a href="https://www.youtube.com/@KeepTheWalkShon"></a
-        ></i>
-        <i class="fa fa-instagram" aria-hidden="true"
-          ><a
-            href="https://www.instagram.com/keshonswalksoflife/?igsh=MmRkMGFucG56a21w&utm_source=qr"
-          ></a
-        ></i>
+        <!-- Projects Section -->
+        <section id="projects" class="mt-5">
+          <h3 class="text text-center mb-4">Portfolio Projects</h3>
+          <div class="row g-4">
+            <!-- Project 1 -->
+            <div class="col-md-6">
+              <div class="homeCard card shadow-sm">
+                <div class="card-body">
+                  <h5 class="text card-title">Project 1</h5>
+                  <p class="card-text">
+                    A short description of the project with a focus on results.
+                  </p>
+                  <a href="/DOM/portfolio.html" class="final-button btn"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
 
-        <a href="/DOM/contact.html" class="feedback-text">
-          <button
-            type="submit"
-            name="feedback"
-            value="feedback"
-            class="feedback-text btn feedback"
+            <div class="col-md-6">
+              <div class="homeCard card shadow-sm">
+                <div class="card-body">
+                  <h5 class="text card-title">Project 2</h5>
+                  <p class="card-text">
+                    A short description of the project with a focus on results.
+                  </p>
+                  <a href="/DOM/portfolio.html" class="final-button btn"
+                    >Read More</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="text-center py-3 mt-5">
+        <p class="copy-text text">
+          &copy; 2024 Keshon D. Bowman. All rights reserved.
+        </p>
+        <div class="social">
+          <i class="fa fa-envelope" aria-hidden="true"
+            ><a
+              href="https://app.brevo.com/automation/edit/1?prebuilt=true&p_step=1"
+            ></a
+          ></i>
+          <i class="fa fa-youtube-play" aria-hidden="true"
+            ><a href="https://www.youtube.com/@KeepTheWalkShon"></a
+          ></i>
+          <i class="fa fa-instagram" aria-hidden="true"
+            ><a
+              href="https://www.instagram.com/keshonswalksoflife/?igsh=MmRkMGFucG56a21w&utm_source=qr"
+            ></a
+          ></i>
+
+          <a href="/DOM/contact.html" class="feedback-text">
+            <button
+              type="submit"
+              name="feedback"
+              value="feedback"
+              class="feedback-text btn feedback"
+            >
+              Feedback
+            </button></a
           >
-            Feedback
-          </button></a
-        >
-      </div>
-    </footer>
+        </div>
+      </footer>
+    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="/scripts/index.js"></script>
   </body>
 </html>
