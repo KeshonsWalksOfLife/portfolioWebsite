@@ -20,12 +20,6 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-:root {
-  --primary-color: #dcdce5;
-  --secondary-color: #edebcc;
-  --button-color: #6c0000;
-}
-
 #interactive-background {
   position: fixed;
   top: 0;
@@ -41,6 +35,74 @@ h5 {
   font-family: "Playfair Display", serif;
 }
 
+p.portText {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  color: var(--secondary-color);
+}
+
+.portfolio-card {
+  position: relative;
+  width: 100%;
+  max-width: 515px;
+  margin: 4px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.second-port {
+  max-width: 515px;
+  max-height: 210px;
+  object-fit: cover;
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1, 1);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: #6c0000;
+  border-radius: 10px 10px 10px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+.cursor-hover {
+  transition: transform 0.1s ease;
+}
+
 .portfolio-h2 {
   font-weight: bold;
 }
@@ -48,13 +110,15 @@ h5 {
 .main-container {
   /* border: 2px solid red; */
   margin-bottom: -30px;
+  min-width: 1442px;
 }
 
 #newsletter {
   /* border: 2px solid blue; */
-  height: 40vh;
+  height: 68vh;
   margin: 0 0 0 auto;
   margin-right: 100px;
+  margin-bottom: -285px;
 }
 
 #projects {
@@ -62,6 +126,23 @@ h5 {
   width: 65%;
   margin: 0 0 0 auto;
   margin-right: 20px;
+}
+
+.horizontal,
+.birthday-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.birthday-label {
+  margin-left: 15px;
+}
+
+.page-button {
+  margin-left: -155px;
+  width: 300px;
 }
 
 #hero {
@@ -74,7 +155,8 @@ h5 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50px;
+  top: 20px;
+  margin-left: 45px;
 }
 
 .menu-header {
@@ -110,8 +192,8 @@ footer {
 
 label.birthday {
   /* border: 2px solid red; */
-  display: block;
-  text-align: center;
+  margin-top: -10px;
+  padding: 10px;
 }
 
 .social {
@@ -131,7 +213,7 @@ label.birthday {
 }
 
 .button {
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 .feedback-text {
@@ -161,9 +243,10 @@ label.birthday {
   background: var(--secondary-color);
 }
 
-.homeCard {
+.card {
   /* border: 2px solid red; */
-  background: var(--secondary-color);
+  background: none;
+  border: none;
 }
 
 .text {
