@@ -37,8 +37,8 @@ h5 {
 
 .portText {
   font-size: 1.2rem;
-  font-weight: bolder;
-  color: var(--secondary-color);
+  font-weight: bold;
+  color: #edebcc;
 }
 
 .portfolio-card {
@@ -319,6 +319,10 @@ label.birthday {
   margin-top: -20px;
 }
 
+.portButton {
+  margin-left: 150px;
+}
+
 #vertical .carousel-item {
   /* border: 2px solid blue; */
   border-radius: 8px;
@@ -409,6 +413,7 @@ label.birthday {
 
 .contact-main {
   width: 100%;
+  margin-bottom: -30px;
 }
 
 .contact-main .d-flex {
@@ -421,6 +426,7 @@ label.birthday {
   /* border: 2px solid red; */
   border-radius: 8px;
   box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.1);
+  background: var(--secondary-color);
 }
 
 #preferred {
