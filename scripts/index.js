@@ -56,38 +56,20 @@
       );
     });
 
+    // document.querySelector("form[action='#']").addEventListener("submit", function () {
+    //     e.preventDefault();
 
-    document.getElementById("preferred").addEventListener('change', function () {
-        const selected = this.value;
-        const responseDiv = document.getElementById('response');
+    //     alert("Thank you for subscribing to the newsletter!");
 
-        // Clear any Previous Message
-        responseDiv.innerText = "";
+    //     this.reset();
+    // });
 
-        if (selected = "phone") {
-            responseDiv.innerText = "Thank you! I''ll get in touch with you via Phone";
-        } else if (selected = "email") {
-            responseDiv.innerText = "Great! I'll send an email to you shortly"
-        } else if (selected = "social") {
-            responseDiv.innerText = "I'll reach out through social media. Thank you for your time!"
-        }
-    
-    });
+    // document.querySelector("form[action='#']").addEventListener("submit", function () {
+    //     e.preventDefault();
 
-    document.querySelector("form[action='#']").addEventListener("submit", function () {
-        e.preventDefault();
+    //     alert("Thank you for your feedback! I'll get in touch soon.");
 
-        alert("Thank you for subscribing to the newsletter!");
-
-        this.reset();
-    });
-
-    document.querySelector("form[action='#']").addEventListener("submit", function () {
-        e.preventDefault();
-
-        alert("Thank you for your feedback! I'll get in touch soon.");
-
-        this.reset();
-    });
+    //     this.reset();
+    // });
     
 
