@@ -100,7 +100,7 @@
                   <form action="/DOM/thankYouPage.html" method="POST">
                     <input
                       type="email"
-                      class="form-control mb-2"
+                      class="email-post form-control mb-2"
                       placeholder="Your Email"
                       required
                     />
@@ -112,6 +112,7 @@
                     <input
                       type="date"
                       name="birthday"
+                      class="email-post"
                       id="birthday"
                       placeholder="birthday"
                     />
@@ -144,7 +145,7 @@
                       class="portfolio-img"
                     />
                     <div class="portfolio-overlay">
-                      <p class="portText text-muted">Free Thinking Design</p>
+                      <p class="portText">Free Thinking Design</p>
                       <a href="/DOM/portfolio.html" class="port-button btn cta-button">Explore Now</a>
                     </div>
                   </div>   
@@ -156,7 +157,7 @@
                   <div class="portfolio-card card card-body">
                     <img src="/media/quoteImportantDays.jpg" alt="quoteImportantDays" class="second-port portfolio-img">
                     <div class="portfolio-overlay">
-                      <p class="portText text-muted">Important Days</p>
+                      <p class="portText">Important Days</p>
                       <a href="/DOM/portfolio.html" class="port-button btn cta-button">Explore Now</a>
                     </div>
                 </div>
@@ -167,9 +168,11 @@
 
         <!-- Footer -->
         <footer class="text-center py-3 mt-5">
+          <div class="vertical">
           <p class="copy-text text">
             &copy; 2024 Keshon D. Bowman. All rights reserved.
           </p>
+        </div>
           <div class="social">
             <i class="fa fa-envelope" aria-hidden="true"
               ><a
@@ -190,12 +193,13 @@
                 type="submit"
                 name="feedback"
                 value="feedback"
-                class="feedback-text btn feedback"
+                class=" btn feedback"
                 >
                 Feedback
               </button></a
             >
           </div>
+     
         </footer>
       </div>
     </div>

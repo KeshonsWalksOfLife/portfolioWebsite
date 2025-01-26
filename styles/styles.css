@@ -35,128 +35,9 @@ h5 {
   font-family: "Playfair Display", serif;
 }
 
-.portText {
-  font-size: 1.2rem;
-  font-weight: bolder;
-  color: var(--secondary-color);
-}
-
-.portfolio-card {
-  position: relative;
-  width: 100%;
-  max-width: 515px;
-  margin: 4px auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.portfolio-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-  border-radius: 8px;
-}
-
-.second-port {
-  max-width: 515px;
-  max-height: 210px;
-  object-fit: cover;
-}
-
-.portfolio-card:hover .portfolio-img {
-  transform: scale(1, 1);
-}
-
-.portfolio-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.portfolio-card:hover .portfolio-overlay {
-  opacity: 1;
-}
-
-.custom-cursor {
-  width: 20px;
-  height: 20px;
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  background: #6c0000;
-  border-radius: 10px 10px 10px;
-  position: absolute;
-  pointer-events: none;
-  z-index: 9999;
-  transition: transform 0.1s ease;
-}
-
-.cursor-hover {
-  transition: transform 0.1s ease;
-}
-
-.portfolio-h2 {
-  font-weight: bold;
-}
-
-.main-container {
-  /* border: 2px solid red; */
-  margin-bottom: -30px;
-  min-width: 1442px;
-}
-
-#newsletter {
-  /* border: 2px solid blue; */
-  height: 68vh;
-  margin: 0 0 0 auto;
-  margin-right: 100px;
-  margin-bottom: -285px;
-}
-
-#projects {
-  /* border: 2px solid yellow; */
-  width: 65%;
-  margin: 0 0 0 auto;
-  margin-right: 20px;
-}
-
-.horizontal,
-.birthday-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.birthday-label {
-  margin-left: 15px;
-}
-
 .page-button {
   margin-left: -155px;
   width: 300px;
-}
-
-#hero {
-  /* border: 2px solid green; */
-  width: 32%;
-  height: 80vh;
-  padding: 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 20px;
-  margin-left: 45px;
 }
 
 .menu-header {
@@ -221,14 +102,20 @@ label.birthday {
   color: var(--secondary-color);
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease-in-out;
-}
-
 /* Home Page */
+
 #hero {
+  /* border: 2px solid green; */
+  width: 32%;
+  height: 80vh;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  margin-left: 45px;
   text-align: left;
 }
 
@@ -249,18 +136,27 @@ label.birthday {
   border: none;
 }
 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
 .text {
   color: var(--button-color);
 }
 
 .text-h1 {
   /* border: 2px solid red; */
+  min-width: 320px;
   text-align: center;
 }
 
 .bold {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
+  min-width: 320px;
+  text-align: center;
 }
 
 .btn {
@@ -273,6 +169,116 @@ label.birthday {
   opacity: 0.85;
   color: var(--primary-color);
   transition: all 0.3s ease-in-out;
+}
+
+.portText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #edebcc;
+}
+
+.portfolio-card {
+  position: relative;
+  width: 100%;
+  height: 85%;
+  object-fit: cover;
+  max-width: 500px;
+  margin: 4px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.portfolio-img {
+  max-width: 515px;
+  max-height: 360px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.second-port {
+  max-width: 515px;
+  max-height: 240px;
+  object-fit: cover;
+}
+
+.portfolio-card:hover .portfolio-img {
+  transform: scale(1, 1);
+}
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: #6c0000;
+  border-radius: 10px 10px 10px;
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+.cursor-hover {
+  transition: transform 0.1s ease;
+}
+
+.portfolio-h2 {
+  font-weight: bold;
+}
+
+.main-container {
+  /* border: 2px solid red; */
+  margin-bottom: -60px;
+  max-width: 1642px;
+  max-height: 100%;
+}
+
+#newsletter {
+  /* border: 2px solid blue; */
+  height: 68vh;
+  margin: 0 0 0 auto;
+  margin-right: 140px;
+  margin-bottom: -295px;
+}
+
+#projects {
+  /* border: 2px solid yellow; */
+  width: 65%;
+  margin: 0 0 0 auto;
+  margin-right: 20px;
+}
+
+.horizontal,
+.birthday-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.birthday-label {
+  margin-left: 15px;
 }
 
 /* Portfolio Page  */
@@ -317,6 +323,10 @@ label.birthday {
   width: 45vw;
   margin-left: -10px;
   margin-top: -20px;
+}
+
+.portButton {
+  margin-left: 150px;
 }
 
 #vertical .carousel-item {
@@ -409,6 +419,7 @@ label.birthday {
 
 .contact-main {
   width: 100%;
+  margin-bottom: -30px;
 }
 
 .contact-main .d-flex {
@@ -421,6 +432,7 @@ label.birthday {
   /* border: 2px solid red; */
   border-radius: 8px;
   box-shadow: 0px 10px 10px 6px rgba(0, 0, 0, 0.1);
+  background: var(--secondary-color);
 }
 
 #preferred {
@@ -461,4 +473,268 @@ label.birthday {
 
 .social i:hover {
   opacity: 0.7;
+}
+
+/* For Tablets (iPad Pro and similar devices) */
+@media (min-width: 1200px) and (max-width: 1420px) {
+  .main-container {
+    font-size: 1rem;
+  }
+
+  #newsletter {
+    width: 60%;
+    margin-right: 70px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.99px) {
+  #newsletter {
+    width: 60%;
+    margin-right: 70px;
+  }
+
+  .portfolio-card {
+    height: 72%;
+  }
+
+  .main-container {
+    margin-bottom: -80px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+  * {
+    overflow: auto;
+  }
+
+  body {
+    overflow: hidden;
+  }
+
+  .main-container,
+  .mt-4 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0.5px;
+  }
+
+  #hero {
+    /* border: 2px solid red; */
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 200px;
+    top: 30px;
+    overflow: hidden;
+  }
+
+  #hero img {
+    width: 300px;
+    height: 1500px;
+    padding: 20px;
+  }
+
+  .text-h1 {
+    /* border: 2px solid red; */
+    height: 160%;
+    width: 400px;
+    font-size: 3.2rem;
+    margin-top: 5px;
+  }
+
+  .bold {
+    /* border: 2px solid red; */
+    width: 400px;
+    height: 50%;
+    margin-top: -5px;
+    font-size: 1.3rem;
+  }
+
+  #newsletter {
+    width: 85%;
+    margin: 80px auto;
+    margin-bottom: -270px;
+    overflow: hidden;
+  }
+
+  h5,
+  .mb-4 {
+    /* border: 2px solid red; */
+    font-size: 1.8rem;
+    overflow: hidden;
+  }
+
+  .text-muted {
+    text-align: center;
+  }
+
+  #projects {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .portfolio-card {
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    /* border: 2px solid red; */
+  }
+
+  .col-md-6 {
+    width: 900px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+  }
+
+  .portfolio-img {
+    width: 125%;
+  }
+
+  footer {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 406px) and (max-width: 767.5px) {
+  * {
+    overflow: visible;
+  }
+
+  .main-container,
+  .mt-4 {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0.5px;
+    margin-bottom: -80px;
+  }
+
+  #hero {
+    /* border: 2px solid red; */
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -50px;
+    top: 20px;
+    overflow: hidden;
+  }
+
+  #hero img {
+    width: 300px;
+    height: 1500px;
+    padding: 20px;
+  }
+
+  .text-h1 {
+    /* border: 2px solid red; */
+    height: 160%;
+    width: 400px;
+    font-size: 3.2rem;
+    margin-top: 5px;
+  }
+
+  .bold {
+    /* border: 2px solid red; */
+    width: 400px;
+    height: 50%;
+    margin-top: -5px;
+    font-size: 1.3rem;
+  }
+
+  #newsletter {
+    width: 90%;
+    height: 100%;
+    margin: 80px auto;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    overflow: hidden;
+  }
+
+  .email-post {
+    height: 50px;
+  }
+
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-button {
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 15px 25px;
+  }
+
+  h5,
+  .mb-4 {
+    /* border: 2px solid red; */
+    font-size: 1.8rem;
+    overflow: hidden;
+  }
+
+  .text-muted {
+    text-align: center;
+  }
+
+  #projects {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .portfolio-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px;
+    /* border: 2px solid red; */
+  }
+
+  .col-md-6 {
+    width: 405px;
+    /* border: 2px solid red; */
+    overflow: hidden;
+  }
+
+  .portfolio-img {
+    width: 120%;
+  }
+
+  .vertical {
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+  }
+
+  .social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    /* border: 2px solid red; */
+    overflow: hidden;
+  }
+
+  .fa {
+    margin: -200px;
+    width: 100%;
+  }
+
+  .social i {
+    font-size: 3rem;
+  }
 }
