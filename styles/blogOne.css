@@ -1,7 +1,7 @@
-html,
-body {
-  height: 100%;
+* {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 #bento-layout {
@@ -10,7 +10,7 @@ body {
   grid-template-columns: 3fr 1fr;
   grid-template-rows: auto 1fr;
   gap: 1rem;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 /* Top bar with logo and menu */
@@ -27,8 +27,19 @@ body {
 
 /* Scrollable blog area */
 .blog-panel {
+  margin-left: 20px;
+  width: 90%;
+  height: 60%;
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
   overflow-y: auto;
+  border: 2px solid blue;
+}
+
+#side-panel {
+  text-align: left;
+  border: 2px solid red;
+  height: 60%;
+  width: 100%;
 }

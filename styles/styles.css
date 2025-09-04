@@ -18,6 +18,24 @@
   margin: 10px 20px;
 }
 
+.conBan {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blogLink {
+  padding-right: 20px;
+  color: white;
+  font: bold;
+  text-decoration: none;
+  /* border: 2px solid red; */
+}
+
+.blogLink:hover {
+  color: lightblue;
+  transition: all ease-in-out 300ms;
+}
+
 figure {
   width: 92%;
   margin: 10px auto;
@@ -40,10 +58,23 @@ figcaption {
   text-align: center;
 }
 
+form.formIndex > figure#logo > figcaption {
+  /* border: 2px solid red; */
+  margin-top: 40px;
+  padding-left: -20px;
+}
+
+figure#logo {
+  /* border: 2px solid red; */
+  width: 100%;
+  padding-right: 40px;
+  padding-bottom: -60px;
+}
+
 footer {
   /* border: 2px solid red; */
   height: 12%;
-  margin-top: 22px;
+  margin-top: -106px;
 }
 
 .botFoot {
