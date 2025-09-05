@@ -7,29 +7,31 @@
 #bento-layout {
   height: 100vh;
   display: grid;
-  grid-template-columns: 3fr 1fr;
-  grid-template-rows: auto 1fr;
-  gap: 1rem;
+  grid-template-columns: 3.5fr 1.4fr;
+  grid-template-rows: auto 1.6fr 1fr;
+  gap: 20px;
   border: 2px solid red;
+  padding: 20px;
+  overflow: hidden;
 }
 
 /* Top bar with logo and menu */
 .top-bar {
   grid-column: 1 /-1;
+  grid-row: 1/2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 1rem;
   background: #f8f9fa;
   border-radius: 0 0 8px 8px;
-  /* border: 2px solid blue; */
+  border: 2px solid blue;
 }
 
 /* Scrollable blog area */
 .blog-panel {
-  margin-left: 20px;
-  width: 90%;
-  height: 60%;
+  grid-column: 1/2;
+  grid-row: 2/3;
   background: #fff;
   border-radius: 8px;
   padding: 1rem;
@@ -38,8 +40,41 @@
 }
 
 #side-panel {
+  grid-column: 2/3;
+  grid-row: 2/3;
   text-align: left;
   border: 2px solid red;
-  height: 60%;
+  height: 80%;
+  width: 80%;
+  border-radius: 8px;
+}
+
+#box-flex {
   width: 100%;
+  display: flex;
+  gap: 120px;
+  /* border: 2px solid red; */
+}
+
+#section3 {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  border: 2px solid bisque;
+  width: 96%;
+  height: 108%;
+  margin-top: -100px;
+  border-radius: 8px;
+}
+
+#section4 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  border: 2px solid firebrick;
+  border-radius: 8px;
+  width: 100%;
+  height: 75%;
+}
+
+* {
+  /* border: 2px solid rgba(0, 0, 0, 0.1); */
 }
