@@ -39,6 +39,47 @@
   border: 2px solid blue;
 }
 
+/* The button container in the middle */
+.middle-interaction {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  /* Position the button relative to the panel's movement */
+  position: relative;
+  /* Add a subtle line or background to  >>> FUN TASK*/
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The goodies panel */
+.goodies-panel {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  border: 2px solid firebrick;
+  border-radius: 8px;
+  width: 100%;
+  height: 75%;
+  transition: all 0.5s ease-in-out;
+}
+
+/* ---  Toggle State: When the button is clicked   --- */
+body.goodies-expanded #blog-panel {
+  grid-row: 4/5;
+  height: 20%;
+  overflow-y: hidden;
+}
+
+body.goodies-expanded .middle-interaction {
+  grid-row: 3/4;
+}
+
+body.goodies-expanded .goodies-panel {
+  grid: 2/3;
+}
+
 #side-panel {
   grid-column: 2/3;
   grid-row: 2/3;
@@ -73,8 +114,4 @@
   border-radius: 8px;
   width: 100%;
   height: 75%;
-}
-
-* {
-  /* border: 2px solid rgba(0, 0, 0, 0.1); */
 }
